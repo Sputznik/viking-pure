@@ -1,0 +1,56 @@
+/* SOW VIKING SIDEBAR */
+.tabs-wrapper{position: relative;}
+.tabs-wrapper .headline{
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+.tabs-wrapper .shape {
+  position: relative;
+  height: 40px;
+  width: 200px;
+  background: #eff3f6;
+}
+.tabs-wrapper .shape:after {
+  position: absolute;
+  content: '';
+  height: 0px;
+  width: 0px;
+  left: 200px;
+  border-width: 20px 22px;
+  border-style: solid;
+  border-color: transparent transparent #eff3f6 #eff3f6;
+}
+.viking-sidebar{
+  background-color: #eff3f6;
+  padding-top: 20px;
+  padding-bottom: 54px;
+}
+.viking-sidebar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.viking-sidebar a{
+  display: block;
+  text-decoration: none;
+}
+.viking-sidebar span {
+  color: #5b5f69;
+  display:inline-block;
+  vertical-align:middle;
+  font-size: 14px;
+}
+.viking-sidebar .item{ margin-left: 10px;}
+.viking-sidebar li:nth-child(1){background-color: #68b2cb;}
+.viking-sidebar li:nth-child(1) span{color: #fff;}
+.viking-sidebar img {
+  width: 100%;
+  max-width:60px;
+  padding: 10px;
+  display:inline-block;
+  vertical-align:middle;
+}
+/* SOW VIKING SIDEBAR */
