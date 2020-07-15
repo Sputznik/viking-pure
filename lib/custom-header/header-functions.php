@@ -35,7 +35,7 @@ add_filter('sp_nav_menu_options', function( $sp_nav_menu_options ){
 
     $sp_nav_menu_options['container_class'] = 'collapse navbar-collapse';
     $sp_nav_menu_options['container_id']    = 'bs-example-navbar-collapse-1';
-    $sp_nav_menu_options['menu_class']      = 'nav navbar-nav navbar-right';
+    $sp_nav_menu_options['menu_class']      = 'nav navbar-nav';
 
   }
 

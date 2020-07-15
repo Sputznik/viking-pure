@@ -1,4 +1,4 @@
-<!-- <div class="sticky-transparent-header" data-spy="affix" data-offset-top="50"> -->
+<div class="sticky-transparent-header" data-spy="affix" data-offset-top="80">
   <nav class="navbar navbar-default header5">
     <div class="container-fluid"><!-- .container-->
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -14,4 +14,4 @@
   		<?php do_action('sp_nav_menu');?>
     </div><!-- /.container-->
   </nav>
-<!-- </div> -->
+</div>
