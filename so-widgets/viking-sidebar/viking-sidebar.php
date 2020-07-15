@@ -55,7 +55,12 @@ class Viking_Pure_Sidebar extends SiteOrigin_Widget {
 							'fallback' 	=> false
 						),
           )
-				)
+				),
+				'highlight' => array(
+        	'type' 		=> 'checkbox',
+        	'label' 	=> __( 'Highlight the first tab?', 'siteorigin-widgets' ),
+        	'default' => true
+    		),
 			),
 			//The $base_folder path string.
 			get_template_directory()."/so-widgets/viking-sidebar"

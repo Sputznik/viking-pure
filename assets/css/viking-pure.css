@@ -44,8 +44,6 @@
   font-size: 14px;
 }
 .viking-sidebar .item{ margin-left: 10px;}
-.viking-sidebar li:nth-child(1){background-color: #68b2cb;}
-.viking-sidebar li:nth-child(1) span{color: #fff;}
 .viking-sidebar img {
   width: 100%;
   max-width:60px;
