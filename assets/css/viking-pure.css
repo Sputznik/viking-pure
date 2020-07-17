@@ -74,6 +74,8 @@
   top: 0;
   width: 100%;
   z-index: 999;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  border-bottom: 1px solid #e6e6e6;
 }
 /* Sticky menu */
 
@@ -165,6 +167,150 @@
 .header5 .header-right .logo-two{width: 54px;}
 /* Header Right */
 
+/* VIDEO SLIDER SOW */
+/* Arrows */
+.slick-prev, .slick-next{
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: none !important;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border-radius: 10px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+  font-size: 40px;
+  line-height: 10px;
+  opacity: .75;
+  color: #68b2cb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+  left: -45px;
+}
+[dir='rtl'] .slick-prev
+{
+  right: -45px;
+  left: auto;
+}
+.slick-prev:before
+{
+  font-family: "FontAwesome";
+  content: "\f190";
+}
+[dir='rtl'] .slick-prev:before
+{
+  content: "\f190";
+}
+
+.slick-next
+{
+  right: -45px;
+}
+[dir='rtl'] .slick-next
+{
+  right: auto;
+  left: -45px;
+}
+.slick-next:before
+{
+  font-family: "FontAwesome";
+  content: "\f18e";
+}
+[dir='rtl'] .slick-next:before
+{
+  content: "\f18e";
+}
+
+.slick-dots
+{
+	position: absolute;
+	bottom: -40px;
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+.slick-dots li
+{
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0 2px;
+	padding: 0;
+	cursor: pointer;
+}
+.slick-dots li button
+{
+	font-size: 0;
+	display: block;
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	outline: none;
+	background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+	outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+	opacity: 1;
+}
+.slick-dots li button:before
+{
+  border-radius: 23px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	opacity: .55;
+	color: #68b2cb;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li button::before { font-family: "FontAwesome"; content: "\f10c"; }
+.slick-dots li.slick-active button:before{opacity: .85;color: #68b2cb;background-color: #68b2cb;}
+.slide .youtube-frame iframe{width:100%;border:none;}
+/* Video Content */
+.slide h5{color: #68b2cb;}
+.slide p{ font-weight: lighter;}
+/* Video Content */
+.slick-slide{margin:0px 10px;}
+/* VIDEO SLIDER SOW */
 
 /* Ovverride default BS3 styles */
 @media( min-width: 769px ){
@@ -191,7 +337,10 @@
   .navbar-right .dropdown-menu{ left: 15px; }
   .navbar .dropdown-menu{ top:75%; padding: 0;min-width: 200px;}
   /* Dropdown Menu */
-
+  /* Video Content */
+  .slide h5{font-size: 19px;}
+  .slick-prev, .slick-next{ display: inline-block !important;}
+  /* Video Content */
 }
 @media only screen and (max-width: 768px) and (min-width: 768px){
   #bs-example-navbar-collapse-1,
