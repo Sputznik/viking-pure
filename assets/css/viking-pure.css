@@ -261,15 +261,15 @@
 {
 	position: relative;
 	display: inline-block;
-	width: 20px;
-	height: 20px;
+	width: 8px;
+	height: 8px;
 	margin: 0 2px;
 	padding: 0;
 	cursor: pointer;
 }
 .slick-dots li button
 {
-	font-size: 0;
+	font-size: 8px;
 	display: block;
 	cursor: pointer;
 	color: transparent;
@@ -290,9 +290,10 @@
 .slick-dots li button:before
 {
   border-radius: 23px;
-  font-size: 12px;
+  /* font-size: 12px; */
+  font-size: 8px;
   font-weight: bold;
-  line-height: 10px;
+  line-height: 4px;
 	position: absolute;
 	top: 0;
 	left: 0;
