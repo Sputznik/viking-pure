@@ -3,6 +3,7 @@
 	if( !isset( $instance['show_slides'] ) ){
 		$instance['show_slides'] = 4;
 	}
+	$img_path = get_stylesheet_directory_uri().'/assets/logos/';
 ?>
 
 <!-- Video Slider -->
@@ -24,6 +25,7 @@
 				<div class='youtube-frame'>
 					<a class="play-btn" href="#<?php _e( $modal_id );?>" data-toggle="modal">
 						<img src="<?php _e( $thumbnail );?>"/>
+						<div class="overlay"></div>
 					</a>
 				</div>
 				<h5><?php _e($slide['video_title']);?></h5>
@@ -44,3 +46,17 @@ foreach( $instance['slides'] as $slide ){
 }
 ?>
 <!-- End Video Slider -->
+<style>
+
+.youtube-frame .play-btn:after {
+	content: url('<?php _e($img_path.'/play-btn.png');?>');
+}
+.slick-prev:before, [dir='rtl'] .slick-prev:before{
+	content: url('<?php _e($img_path.'/left-arrow.svg');?>');
+}
+
+.slick-next:before, [dir='rtl'] .slick-next:before{
+  content: url('<?php _e($img_path.'/right-arrow.svg');?>');
+}
+
+</style>
