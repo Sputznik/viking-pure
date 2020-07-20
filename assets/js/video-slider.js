@@ -9,7 +9,7 @@ $(document).ready(function(){
 		$el.slick({
 			slidesToShow		: $el.data('items'),
 			slidesToScroll	: 1,
-			autoplay				: true,
+			autoplay				: false,
 			autoplaySpeed		: 1500,
 			arrows					: true,
 			dots						: true,

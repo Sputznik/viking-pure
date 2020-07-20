@@ -2,8 +2,8 @@
 
 /*ENQUEUE STYLES*/
 add_action('wp_enqueue_scripts',function(){
-  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.5' );
-  wp_enqueue_script( 'video-slider-js', get_stylesheet_directory_uri().'/assets/js/video-slider.js', array( 'jquery' ), '1.0.0', true );
+  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.6' );
+  wp_enqueue_script( 'video-slider-js', get_stylesheet_directory_uri().'/assets/js/video-slider.js', array( 'jquery' ), '1.0.1', true );
 },99);
 
 //Include Files
@@ -14,6 +14,27 @@ add_action('siteorigin_widgets_widget_folders', function( $folders ){
   $folders[] = get_stylesheet_directory() . '/so-widgets/';
   return $folders;
 });
+
+
+
+function get_unique_id( $atts ){
+  return substr( md5( json_encode( $atts ) ), 0, 8 );
+}
+
+function the_youtube_modal( $id, $youtube_link ){
+  ?>
+  <div id="<?php _e( $id );?>" class="ytube-video modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <iframe width="420" height="315" src="<?php echo $youtube_link;?>"></iframe>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div>
+  <?php
+}
+
 
 /*
 // Header Right Logos
