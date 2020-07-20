@@ -2,7 +2,7 @@
 
 /*ENQUEUE STYLES*/
 add_action('wp_enqueue_scripts',function(){
-  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.4' );
+  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.5' );
   wp_enqueue_script( 'video-slider-js', get_stylesheet_directory_uri().'/assets/js/video-slider.js', array( 'jquery' ), '1.0.0', true );
 },99);
 
@@ -15,11 +15,12 @@ add_action('siteorigin_widgets_widget_folders', function( $folders ){
   return $folders;
 });
 
+/*
 // Header Right Logos
 function headerRightLogos( $logoType='normal' ){
   $flag = $logoType == 'white' ? false : true;
   $img_path = get_stylesheet_directory_uri().'/assets/logos/';
-  $html;
+  $html = '';
   if( $flag ){
     $html .='<img class="logo-one" src="'.$img_path.'greenseal.png"/>';
   }
@@ -30,25 +31,24 @@ function headerRightLogos( $logoType='normal' ){
   return $html;
 }
 
+
+
+
 /**
 * Add a custom link to the end of a specific menu that uses the wp_nav_menu() function
 */
-add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
-function add_admin_link($items, $args){
-  $html .='<a target="_blank" href="#" class="btn btn-quote">GET A QUOTE</a>';
-  $html .= headerRightLogos();
-
-  if( $args->theme_location == 'primary' ){
-      $items .= '<li class="menu-item navbar-nav pull-right header-right-wrapper">
-                  <div class="header-right">
-                    '.$html.'
-                  </div>
-                </li>
-                <li class="viking-logos">
-                  <div class="logos-wrapper">
-                    '.headerRightLogos('white').'
-                  </div>
-                </li>';
-  }
+add_filter('wp_nav_menu_items', function( $items, $args ){
+	if( $args->theme_location == 'primary' ){
+		$items .= getQuoteBtn();
+	}
   return $items;
+}, 10, 2);
+
+
+function getQuoteBtn(){
+	return '<a target="_blank" href="#" class="btn btn-quote">GET A QUOTE</a>';
+}
+
+function vpCertficationLogos(){
+
 }
