@@ -26,7 +26,7 @@ function headerRightLogos( $logoType='normal' ){
   else{
     $html .='<img class="logo-one" src="'.$img_path.'greenseal_white.png"/>';
   }
-  $html .='<img class="logo-two" src="'.$img_path.'woolsafe.png"/>';
+  $html .='<img class="logo-two" src="'.$img_path.'woolsafee.png"/>';
   return $html;
 }
 
