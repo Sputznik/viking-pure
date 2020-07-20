@@ -237,7 +237,7 @@
 }
 .viking-logos li{ padding: 0;}
 .viking-logos img{ width: 100%;}
-.viking-logos .logo-one{ max-width: 52px;}
+.viking-logos .logo-one{ max-width: 52px; margin-right: 10px;}
 .viking-logos .logo-two{ max-width: 48px; }
 .header5 .header-right{
   display: inline-block;
@@ -251,10 +251,12 @@
   background-color: #68b2cb;
   color: #ffffff !important;
   border-radius: 20px;
-  margin-right: 6px;
 }
 #bs-example-navbar-collapse-1 .btn-quote{ display: none; }
-/* Get a quote */
+.viking-logos .btn-quote{
+	margin-right: 25px;
+}
+/* Get a quote *
 .header5 .header-right .logo-one{width: 60px;}
 .header5 .header-right .logo-two{width: 44px;}
 /* Header Right */

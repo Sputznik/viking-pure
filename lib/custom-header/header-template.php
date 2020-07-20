@@ -21,12 +21,12 @@
 				</li>
 				<li>
 					<a href="#">
-						<img class="logo-one" src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/greenseal.png" />
+						<img class="logo-one" src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/green-seal-certified.svg" />
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img class="logo-two" src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/woolsafee.png" />
+						<img class="logo-two" src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/woolsafe-approved.svg" />
 					</a>
 				</li>
 			</ul>
