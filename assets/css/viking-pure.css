@@ -53,6 +53,37 @@
 }
 /* SOW VIKING SIDEBAR */
 
+/* SOW VIKING BULLET LIST */
+.bullet-list-wrapper .headline h3{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.bullet-list-wrapper .bullet-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bullet-list-wrapper .bullet-list .item {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 45px 1fr;
+}
+.bullet-list-wrapper .bullet-list img {
+  width: 100%;
+  max-width: 40px;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bullet-list-wrapper .bullet-list span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  margin-top: 10px;
+}
+/* SOW VIKING BULLET LIST */
+
 /* Ovverride default BS3 styles */
 .navbar { min-height: 80px; margin-bottom: 0;}
 
@@ -468,6 +499,13 @@
     min-height: 400px;
   }
   /* Youtube Video Popup */
+  /* SOW VIKING BULLET LIST */
+  .bullet-list-wrapper{margin: 0 auto;}
+  .bullet-list-wrapper .bullet-list-content{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+  }
+  /* SOW VIKING BULLET LIST */
 }
 @media only screen and (max-width: 768px) and (min-width: 768px){
   #bs-example-navbar-collapse-1,
@@ -542,6 +580,8 @@
     min-height: 300px;
   }
   /* Youtube Video Popup */
+  /* VIKING BULLET LIST */
+  .bullet-list-wrapper .bullet-list .item { margin-right: 10px;}
 }
 @media(max-width:600px){
   .header-right-wrapper.navbar-nav {
