@@ -61,6 +61,12 @@ class Viking_Pure_Sidebar extends SiteOrigin_Widget {
 		    		),
           )
 				),
+				'top_padding' => array(
+					'type' 		=> 'text',
+					'label' 	=> __( 'Top Padding', 'siteorigin-widgets' ),
+					'default' 		=> '20px',
+					'description'	=>	__( 'Must be in pixels. Default value 20px', 'siteorigin-widgets' ),
+				),
 				'bottom_padding' => array(
 					'type' 		=> 'text',
 					'label' 	=> __( 'Bottom Padding', 'siteorigin-widgets' ),

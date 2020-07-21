@@ -1,4 +1,5 @@
 <?php
+  $spacing_top = !empty( $instance['top_padding'] ) ?  $instance['top_padding'] : '20px';
   $spacing = !empty( $instance['bottom_padding'] ) ?  $instance['bottom_padding'] : '54px';
 ?>
 <div class="tabs-wrapper">
@@ -23,4 +24,9 @@
     </ul>
   </div>
 </div>
-<style>.viking-sidebar { padding-bottom: <?php _e($spacing)?>; }</style>
+<style>
+.viking-sidebar {
+  padding-top: <?php _e($spacing_top);?>;
+  padding-bottom: <?php _e($spacing)?>;
+}
+</style>

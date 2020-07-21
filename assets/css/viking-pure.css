@@ -11,23 +11,20 @@
 .tabs-wrapper .shape {
   position: relative;
   height: 45px;
-  width: 200px;
-  background: #eff3f6;
+  width: 210px;
+  background: #f0f3f5;
 }
 .tabs-wrapper .shape:after {
   position: absolute;
   content: '';
   height: 0px;
-  width: 0px;
-  left: 200px;
+  width: 44px;
+  left: 210px;
   border-width: 23px 22px;
   border-style: solid;
-  border-color: transparent transparent #eff3f6 #eff3f6;
+  border-color: transparent transparent #f0f3f5 #f0f3f5;
 }
-.viking-sidebar{
-  background-color: #eff3f6;
-  padding-top: 20px;
-}
+.viking-sidebar{background-color: #f0f3f5;}
 .viking-sidebar ul{
   list-style: none;
   margin: 0;
