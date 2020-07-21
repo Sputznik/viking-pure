@@ -1,31 +1,26 @@
-<?php $highlight = $instance['highlight']; ?>
+<?php
+  $spacing = !empty( $instance['bottom_padding'] ) ?  $instance['bottom_padding'] : '54px';
+?>
 <div class="tabs-wrapper">
   <div class="shape">
     <span class="headline">SELECT YOUR INDUSTRY</span>
   </div>
   <div class="viking-sidebar">
     <ul>
-      <?php $i=1; foreach( $instance['tabs'] as $item ):?>
-        <?php if( $highlight == true && $i == 1): ?>
-        <li style="background-color: #68b2cb;">
-          <a href="<?php _e( $item['tab_url'] );?>">
-            <div class="item">
-              <img src="<?php _e( wp_get_attachment_url( $item['image'] ) );?>" />
-              <span style="color: #ffffff;"><?php _e( $item['tab_title'] );?></span>
-            </div>
-          </a>
-        </li>
-      <?php else: ?>
-        <li>
-          <a href="<?php _e( $item['tab_url'] );?>">
-            <div class="item">
-              <img src="<?php _e( wp_get_attachment_url( $item['image'] ) );?>" />
-              <span><?php _e( $item['tab_title'] );?></span>
-            </div>
-          </a>
-        </li>
-      <?php endif;?>
-      <?php $i++; endforeach;?>
+      <?php foreach( $instance['tabs'] as $item ):?>
+        <?php
+          $tab_class = 'normal';
+          if( $item['highlight']){ $tab_class = 'highlight'; } ?>
+          <li class="<?php _e( $tab_class );?>">
+            <a href="<?php _e( $item['tab_url'] );?>">
+              <div class="item">
+                <img src="<?php _e( wp_get_attachment_url( $item['image'] ) );?>" />
+                <span><?php _e( $item['tab_title'] );?></span>
+              </div>
+            </a>
+          </li>
+      <?php endforeach;?>
     </ul>
   </div>
 </div>
+<style>.viking-sidebar { padding-bottom: <?php _e($spacing)?>; }</style>

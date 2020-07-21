@@ -54,13 +54,19 @@ class Viking_Pure_Sidebar extends SiteOrigin_Widget {
 							'library' 	=> 'image',
 							'fallback' 	=> false
 						),
+						'highlight' => array(
+		        	'type' 		=> 'checkbox',
+		        	'label' 	=> __( 'Highlight tab?', 'siteorigin-widgets' ),
+		        	'default' => false
+		    		),
           )
 				),
-				'highlight' => array(
-        	'type' 		=> 'checkbox',
-        	'label' 	=> __( 'Highlight the first tab?', 'siteorigin-widgets' ),
-        	'default' => true
-    		),
+				'bottom_padding' => array(
+					'type' 		=> 'text',
+					'label' 	=> __( 'Bottom Padding', 'siteorigin-widgets' ),
+					'default' 		=> '54px',
+					'description'	=>	__( 'Must be in pixels. Default value 54px', 'siteorigin-widgets' ),
+				),
 			),
 			//The $base_folder path string.
 			get_template_directory()."/so-widgets/viking-sidebar"

@@ -26,7 +26,6 @@
 .viking-sidebar{
   background-color: #eff3f6;
   padding-top: 20px;
-  padding-bottom: 54px;
 }
 .viking-sidebar ul{
   list-style: none;
@@ -36,6 +35,13 @@
 .viking-sidebar a{
   display: block;
   text-decoration: none;
+}
+.viking-sidebar .highlight{
+  background-color: #68b2cb;
+}
+.viking-sidebar .highlight span{
+  color: #ffffff;
+  letter-spacing: 1px;
 }
 .viking-sidebar span {
   color: #5b5f69;
