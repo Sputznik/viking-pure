@@ -3,13 +3,14 @@
 .tabs-wrapper .headline{
   font-weight: bold;
   font-size: 14px;
+  letter-spacing: 1px;
   position: absolute;
   bottom: 0;
   left: 20px;
 }
 .tabs-wrapper .shape {
   position: relative;
-  height: 40px;
+  height: 45px;
   width: 200px;
   background: #eff3f6;
 }
@@ -19,7 +20,7 @@
   height: 0px;
   width: 0px;
   left: 200px;
-  border-width: 20px 22px;
+  border-width: 23px 22px;
   border-style: solid;
   border-color: transparent transparent #eff3f6 #eff3f6;
 }
@@ -41,18 +42,19 @@
 }
 .viking-sidebar .highlight span{
   color: #ffffff;
-  letter-spacing: 1px;
 }
 .viking-sidebar span {
   color: #5b5f69;
   display:inline-block;
   vertical-align:middle;
   font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 .viking-sidebar .item{ margin-left: 10px;}
 .viking-sidebar img {
   width: 100%;
-  max-width:60px;
+  max-width:62px;
   padding: 10px;
   display:inline-block;
   vertical-align:middle;
