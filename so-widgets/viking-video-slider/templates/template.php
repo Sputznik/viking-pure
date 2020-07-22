@@ -8,7 +8,7 @@
 
 <!-- Video Slider -->
 <div class="fullwidth">
-	<div class="container-logos" style="max-width:1170px;margin:0 auto;">
+	<div class="container-videos">
 		<h3 class="thin"><?php _e( $instance['title'] );?></h3>
 		<section data-behaviour="videos-slick" data-items="<?php _e( $instance['show_slides'] );?>" class="slider">
 			<?php foreach( $instance['slides'] as $slide ):?>
@@ -21,7 +21,7 @@
 				$modal_id =  get_unique_id( $video_url );
 				$thumbnail = "http://img.youtube.com/vi/$video_id/mqdefault.jpg";
 			?>
-			<div class="slide" >
+			<div class="slide">
 				<div class='youtube-frame'>
 					<a class="play-btn" href="#<?php _e( $modal_id );?>" data-toggle="modal">
 						<img src="<?php _e( $thumbnail );?>"/>

@@ -72,12 +72,11 @@
   margin-left: 10px;
   margin-bottom: 10px;
   display: grid;
-  grid-template-columns: 45px 1fr;
+  grid-template-columns: 50px 1fr;
 }
 .bullet-list-wrapper .bullet-list img {
   width: 100%;
   max-width: 40px;
-  padding: 10px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -310,6 +309,21 @@
 /* Header logo for small devices */
 
 /* VIDEO SLIDER SOW */
+
+.slider {
+  visibility: hidden;
+  opacity:0;
+	transition: opacity 1s;
+ }
+.slider.slick-initialized {
+  visibility:visible;
+	opacity:1;
+}
+.fullwidth .container-videos{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
 /* Arrows */
 .slick-prev, .slick-next{
   line-height: 0;
