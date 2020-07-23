@@ -476,6 +476,48 @@
 }
 /* Youtube Video Popup */
 
+/* VIKING FOOTER */
+.viking-footer-wrapper{
+  padding: 0;
+  padding-bottom: 50px;
+  background-color: #68b2cb;
+}
+.viking-footer{
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+.viking-footer{font-size:14px;}
+.viking-footer h6{
+  font-size:14px;
+  letter-spacing:3px;
+  margin-bottom:25px;
+}
+.viking-footer .footer-menus h6,
+.viking-footer .footer-menus a{
+  color: #fff;
+}
+.viking-footer .footer-menus li a{
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+.footer-section-two{
+  display: grid;
+  grid-column-gap: 40px;
+  grid-template-columns: 1fr 2fr;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.footer-section-two .contact{
+  font-size: 16px;
+  margin-top: 15px;
+  color: #ffffff;
+ }
+.footer-section-two .logos{margin-top: 15px;}
+/* VIKING FOOTER */
 
 /* Ovverride default BS3 styles */
 @media( min-width: 769px ){
@@ -632,3 +674,61 @@
     margin-top: 20px !important;
   }
 }
+/* VIKING FOOTER */
+
+@media(min-width: 700px){
+  .viking-footer{
+    max-width: 920px;
+    margin: 0 auto;
+  }
+  .footer-section-two{
+    padding: 0;
+    max-width: 920px;
+    margin: 0 auto;
+    grid-template-columns: 2fr 2fr 1fr;
+    justify-items: center;
+  }
+  .footer-section-two .left-logo{
+    max-width: 240px;
+    width: 100%;
+    justify-self: end;
+  }
+}
+@media(max-width: 699px){
+  .footer-section-two .left-logo{
+    max-width: 180px;
+  }
+  .footer-section-two .contact{
+    font-size: 14px !important;
+    margin-top: 10px;
+   }
+}
+@media(max-width: 520px){
+  .viking-footer{
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 15px;
+    justify-items: start;
+  }
+  .footer-section-two{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media(max-width: 425px){
+  .footer-section-two{
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+  .footer-section-two .left-logo{
+    max-width: 180px;
+  }
+  .footer-section-two .logos,
+  .footer-section-two .contact{ margin: 0;}
+}
+@media(max-width:300px){
+  .viking-footer{
+    display: block;
+  }
+}
+
+/* VIKING FOOTER */
