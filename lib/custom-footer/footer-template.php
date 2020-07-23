@@ -1,3 +1,8 @@
+<div class="viking-prefooter">
+  <?php if( is_active_sidebar( 'viking-prefooter' ) ){
+    dynamic_sidebar( 'viking-prefooter' );
+  }?>
+</div>
 <?php $img_path = get_stylesheet_directory_uri().'/assets/logos';?>
 <div class="viking-footer">
   <?php $menus = array(

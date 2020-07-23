@@ -2,7 +2,7 @@
 
 /*ENQUEUE STYLES*/
 add_action('wp_enqueue_scripts',function(){
-  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.13' );
+  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.14' );
   wp_enqueue_script( 'video-slider-js', get_stylesheet_directory_uri().'/assets/js/video-slider.js', array( 'jquery' ), '1.0.2', true );
 },99);
 
@@ -82,3 +82,15 @@ add_action('sp_pre_footer',function(){
 
 //Override parent themes footer-class
 add_filter( 'sp_prefooter_class', function(){ return 'container-fluid viking-footer-wrapper'; });
+
+add_action( 'widgets_init', function(){
+  register_sidebar( array(
+    'name'          => 'Viking Pre Footer',
+    'id'            => 'viking-prefooter',
+    'description'   => 'Appears above the footer area',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h3 class="widget-title">',
+    'after_title'   => '</h3>',
+  ) );
+});
