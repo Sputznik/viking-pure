@@ -699,7 +699,6 @@
   .footer-section-two .left-logo{
     max-width: 240px;
     width: 100%;
-    justify-self: end;
   }
 }
 @media(max-width: 699px){
