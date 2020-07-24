@@ -1,7 +1,7 @@
 <div class="viking-prefooter">
-  <?php if( is_active_sidebar( 'viking-prefooter' ) ){
-    dynamic_sidebar( 'viking-prefooter' );
-  }?>
+	<div class="container">
+  	<?php if( is_active_sidebar( 'viking-prefooter' ) ){ dynamic_sidebar( 'viking-prefooter' );}?>
+	</div>
 </div>
 <?php $img_path = get_stylesheet_directory_uri().'/assets/logos';?>
 <div class="viking-footer">
