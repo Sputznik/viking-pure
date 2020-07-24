@@ -33,4 +33,12 @@ $(document).ready(function(){
 	});
 	$(".slider").slick("refresh");
 
+	// Stop the video after the modal is closed
+	$(".ytube-video.modal").on('hidden.bs.modal',function(){
+			var clickedVideo = $(this);
+			var player = $(clickedVideo).find('iframe');
+			var playerUrl = $(player).attr('src');
+			 $(player).attr("src", playerUrl);
+	});
+
 });
