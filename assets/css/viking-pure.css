@@ -693,7 +693,7 @@
   }
   .footer-section-two{
     padding: 0;
-    max-width: 920px;
+    max-width: 940px;
     margin: 0 auto;
     grid-template-columns: 2fr 2fr 1fr;
     /*justify-items: center;*/
