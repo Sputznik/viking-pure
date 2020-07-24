@@ -16,20 +16,7 @@
   			</button>
 			</div>
   		<?php do_action('sp_nav_menu');?>
-			<ul class='list-inline viking-logos'>
-				<li><?php echo getQuoteBtn();?>
-				</li>
-				<li>
-					<a href="#">
-						<img class="logo-one" src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/green-seal-certified.svg" />
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img class="logo-two" src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/woolsafe-approved.svg" />
-					</a>
-				</li>
-			</ul>
+			<?php echo getCertificationLogos();?>
     </div><!-- /.container-->
   </nav>
 </div>

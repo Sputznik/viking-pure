@@ -588,7 +588,7 @@
     position: fixed;
     z-index: 999;
     width: 100%;
-    background-color: #67B1CAF0;
+    background-color: #67B1CAF8;
 		margin-top: 10px;
 		height: 100%;
   }
@@ -739,4 +739,10 @@
   }
 }
 
+
 /* VIKING FOOTER */
+
+.viking-logos-mobile{ margin-bottom: 50px; }
+@media( min-width: 769px ){
+	.viking-logos-mobile{ display: none; }
+}

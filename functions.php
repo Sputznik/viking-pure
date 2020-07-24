@@ -2,7 +2,7 @@
 
 /*ENQUEUE STYLES*/
 add_action('wp_enqueue_scripts',function(){
-  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.14' );
+  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.3' );
   wp_enqueue_script( 'video-slider-js', get_stylesheet_directory_uri().'/assets/js/video-slider.js', array( 'jquery' ), '1.0.2', true );
 },99);
 
@@ -61,19 +61,39 @@ function headerRightLogos( $logoType='normal' ){
 */
 add_filter('wp_nav_menu_items', function( $items, $args ){
 	if( $args->theme_location == 'primary' ){
-		$items .= getQuoteBtn();
+		$items = "<li>" . getCertificationLogos( false, 'viking-logos-mobile' ) . "</li>" . $items . "<li>" . getQuoteBtn() . "</li>";
 	}
   return $items;
 }, 10, 2);
 
 
+function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' ){
+	ob_start();
+	?>
+	<ul class='list-inline <?php echo $list_class; ?>'>
+		<?php if( $quoteBtn ):?>
+		<li><?php echo getQuoteBtn();?></li>
+		<?php endif; ?>
+		<li>
+			<a href="#">
+				<img class="logo-one" src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/green-seal-certified.svg" />
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<img class="logo-two" src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/woolsafe-approved.svg" />
+			</a>
+		</li>
+	</ul>
+	<?php
+	return ob_get_clean();
+}
+
 function getQuoteBtn(){
 	return '<a target="_blank" href="#" class="btn btn-quote">GET A QUOTE</a>';
 }
 
-function vpCertficationLogos(){
 
-}
 
 // Override parent themes footer template
 add_action('sp_pre_footer',function(){
