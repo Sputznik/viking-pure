@@ -37,7 +37,6 @@ function the_youtube_modal( $id, $youtube_link ){
 
 // VIDEO POPUP SHORTCODE
 add_shortcode( 'viking_video_popup',function( $atts ){
-  ob_start();
   $atts = shortcode_atts(array(
     'video_url' => '',
   ), $atts, 'viking_video_popup');
