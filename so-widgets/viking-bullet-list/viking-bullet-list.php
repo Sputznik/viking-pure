@@ -32,17 +32,29 @@ class Viking_Bullet_List extends SiteOrigin_Widget {
 					'label' 		=> __( 'Bullet List Headline', 'siteorigin-widgets' ),
 					'default' 		=> '',
 				),
-				'left_list' => array(
-	 				'type' => 'section',
-	 				'label' => __( 'Left Bullet List' , 'siteorigin-widgets' ),
-	 				'hide' => true,
-	 				'fields' => $this->bullet_list()
-				),
-				'right_list' => array(
-	 				'type' => 'section',
-	 				'label' => __( 'Right Bullet List' , 'siteorigin-widgets' ),
-	 				'hide' => true,
-	 				'fields' => $this->bullet_list()
+				'bullet_items' => array(
+					'type' 	=> 'repeater',
+					'label' => __( 'Bullet List Repeater' , 'siteorigin-widgets' ),
+					'item_label' => array(
+						'selector' => "[id*='bullet_title']",
+						'update_event' => 'change',
+						'value_method' => 'val'
+					),
+					'fields' => array(
+						'bullet_title' => array(
+							'type' 			=> 'text',
+							'label' 		=> __( 'Item Title', 'siteorigin-widgets' ),
+							'default' 		=> '',
+						),
+						'bullet_image' => array(
+							'type' 		=> 'media',
+							'label' 	=> __( 'Choose Image', 'siteorigin-widgets' ),
+							'choose' 	=> __( 'Choose image', 'siteorigin-widgets' ),
+							'update' 	=> __( 'Set image', 'siteorigin-widgets' ),
+							'library' 	=> 'image',
+							'fallback' 	=> false
+						),
+					)
 				),
 				'design_section' => array(
 	 				'type' => 'section',
@@ -86,37 +98,6 @@ class Viking_Bullet_List extends SiteOrigin_Widget {
 			//The $base_folder path string.
 			get_template_directory()."/so-widgets/viking-bullet-list"
 		);
-	}
-
-	// Bullet List Repeater
-	function bullet_list(){
-		$bullet_list = array(
-			'bullet_items' => array(
-				'type' 	=> 'repeater',
-				'label' => __( 'Bullet List Repeater' , 'siteorigin-widgets' ),
-				'item_label' => array(
-					'selector' => "[id*='bullet_title']",
-					'update_event' => 'change',
-					'value_method' => 'val'
-				),
-				'fields' => array(
-					'bullet_title' => array(
-						'type' 			=> 'text',
-						'label' 		=> __( 'Item Title', 'siteorigin-widgets' ),
-						'default' 		=> '',
-					),
-					'bullet_image' => array(
-						'type' 		=> 'media',
-						'label' 	=> __( 'Choose Image', 'siteorigin-widgets' ),
-						'choose' 	=> __( 'Choose image', 'siteorigin-widgets' ),
-						'update' 	=> __( 'Set image', 'siteorigin-widgets' ),
-						'library' 	=> 'image',
-						'fallback' 	=> false
-					),
-				)
-			)
-		);
-		return $bullet_list;
 	}
 
 	function get_template_name($instance) {

@@ -16,19 +16,15 @@
   <?php endif;?>
   <div class="bullet-list-content">
     <?php if($headline_alignment == 'left'):?>
-      <div class="headline">
+      <div class="headline headline-left">
         <h3><?php _e($instance['bullet_headline']);?></h3>
       </div>
     <?php endif;?>
 
-    <?php
-      $lists = array('left_list','right_list');
-      $list_type = 'left-list';
-      foreach( $lists as $list ): if($list == 'right_list'){$list_type = 'right-list';}?>
       <!-- Bullet List -->
-      <div class="bullet-list <?php _e( $list_type );?>">
+      <div class="bullet-list">
         <ul>
-          <?php foreach( $instance[$list]['bullet_items'] as $item ):?>
+          <?php foreach( $instance['bullet_items'] as $item ):?>
             <li>
               <div class="item">
                 <img src="<?php _e( wp_get_attachment_url( $item['bullet_image'] ) );?>" />
@@ -38,7 +34,6 @@
           <?php endforeach;?>
         </ul>
       </div>
-    <?php endforeach;?>
     <!-- End Bullet List -->
 
   </div>
@@ -46,8 +41,15 @@
 
 </div>
 <style>
+
+<?php if( $headline_alignment == 'left' ):?>
+  .bullet-list-wrapper .bullet-list-content{
+    grid-template-columns: 1fr 2fr;
+  }
+<?php endif;?>
+
+.bullet-list-wrapper .bullet-list ul,
 .bullet-list-wrapper .bullet-list-content{
-  grid-template-columns: <?php echo($headline_alignment == 'left' ? '1fr 1fr 1fr' : '1fr 1fr') ?>;
   grid-column-gap:  <?php _e($gutter);?>;
 }
 .bullet-list-wrapper .headline h3{
