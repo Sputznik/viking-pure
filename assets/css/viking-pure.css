@@ -105,6 +105,17 @@
 }
 /* SOW VIKING PLAYER BANNER  */
 
+/* Viking-video-popup shortcode*/
+.viking-video-popup .youtube-frame.popup{
+  max-width: 350px;
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Viking-video-popup shortcode*/
+
 /* Ovverride default BS3 styles */
 .navbar { min-height: 80px; margin-bottom: 0;}
 
