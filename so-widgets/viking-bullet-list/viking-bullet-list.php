@@ -71,9 +71,9 @@ class Viking_Bullet_List extends SiteOrigin_Widget {
 							'label' 	=> __( 'Bullet Items Color', 'siteorigin-widgets' ),
 							'default' 	=> '#ffffff'
 						),
-						'headline_alignment' => array(
+						'headline_position' => array(
 							'type' => 'select',
-							'label' => __( 'Headline Alignment', 'siteorigin-widgets' ),
+							'label' => __( 'Headline Position', 'siteorigin-widgets' ),
 							'default' => 'center',
 							'options' => array(
 								'center' => __( 'Default', 'siteorigin-widgets' ),

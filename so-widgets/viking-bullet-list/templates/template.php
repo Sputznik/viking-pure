@@ -1,7 +1,7 @@
 <?php
   $highlight          = $instance['highlight'];
   $design             = $instance['design_section'];
-  $headline_alignment = $design['headline_alignment'];
+  $headline_position = $design['headline_position'];
   $headline_color     = $design['headline_color'];
   $item_color         = $design['item_color'];
   $max_width          = !empty( $design['bullet_list_width'] ) ? $design['bullet_list_width'] : '800px';
@@ -9,13 +9,13 @@
 ?>
 
 <div class="bullet-list-wrapper">
-  <?php if($headline_alignment == 'center'):?>
+  <?php if($headline_position == 'center'):?>
     <div class="headline">
       <h3><?php _e($instance['bullet_headline']);?></h3>
     </div>
   <?php endif;?>
   <div class="bullet-list-content">
-    <?php if($headline_alignment == 'left'):?>
+    <?php if($headline_position == 'left'):?>
       <div class="headline headline-left">
         <h3><?php _e($instance['bullet_headline']);?></h3>
       </div>
@@ -42,7 +42,7 @@
 </div>
 <style>
 
-<?php if( $headline_alignment == 'left' ):?>
+<?php if( $headline_position == 'left' ):?>
   .bullet-list-wrapper .bullet-list-content{
     grid-template-columns: 1fr 2fr;
   }
