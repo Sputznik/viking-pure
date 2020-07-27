@@ -92,6 +92,19 @@
 }
 /* SOW VIKING BULLET LIST */
 
+/* SOW VIKING PLAYER BANNER  */
+.viking-play-banner .banner{
+  display: flex;
+  align-items: center;
+}
+.viking-play-banner a{ text-decoration: none;}
+.viking-play-banner .banner-text{
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: lighter;
+}
+/* SOW VIKING PLAYER BANNER  */
+
 /* Ovverride default BS3 styles */
 .navbar { min-height: 80px; margin-bottom: 0;}
 
@@ -588,6 +601,10 @@
     padding-right: 0px;
     padding-left: 0px;
   }
+  /* SOW VIKING PLAYER BANNER  */
+  .viking-play-banner .banner-text{font-size: 18px !important;}
+  /* SOW VIKING PLAYER BANNER  */
+
 }
 @media(max-width: 768px){
   #bs-example-navbar-collapse-1{
@@ -657,6 +674,10 @@
   /* Youtube Video Popup */
   /* VIKING BULLET LIST */
   .bullet-list-wrapper .bullet-list .item { margin-right: 10px;}
+  /* SOW VIKING PLAYER BANNER  */
+  .viking-play-banner .banner-text{font-size: 14px;}
+  .viking-play-banner .banner img{ max-width: 150px;}
+  /* SOW VIKING PLAYER BANNER  */
 }
 @media(max-width:600px){
   .header-right-wrapper.navbar-nav {
