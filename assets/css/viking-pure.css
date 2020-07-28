@@ -616,6 +616,19 @@
   .viking-play-banner .banner-text{font-size: 18px !important;}
   /* SOW VIKING PLAYER BANNER  */
 
+  /* SOW VIKING SIDEBAR */
+  .tabs-wrapper { margin-top: -75px;z-index: 99;}
+  .tabs-wrapper .shape{ width: 210px !important;}
+  .viking-sidebar{ padding-bottom: 0px !important;}
+  .viking-sidebar > ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+  }
+  .viking-sidebar .item{grid-template-columns: 62px 170px !important;}
+  /* SOW VIKING SIDEBAR */
+
 }
 @media(max-width: 768px){
   #bs-example-navbar-collapse-1{
@@ -689,6 +702,17 @@
   .viking-play-banner .banner-text{font-size: 14px;}
   .viking-play-banner .banner img{ max-width: 150px;}
   /* SOW VIKING PLAYER BANNER  */
+
+  /* SOW VIKING SIDEBAR */
+  .tabs-wrapper .shape{ width: 100%;}
+  .viking-sidebar{ padding-bottom: 20px !important;}
+  .viking-sidebar .item{
+    display: grid;
+    grid-template-columns: 62px 1fr;
+    align-items: center;
+   }
+  /* SOW VIKING SIDEBAR */
+
 }
 @media(max-width:600px){
   .header-right-wrapper.navbar-nav {
