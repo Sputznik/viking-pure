@@ -16,9 +16,22 @@ add_action('siteorigin_widgets_widget_folders', function( $folders ){
   return $folders;
 });
 
-
 function get_unique_id( $atts ){
   return substr( md5( json_encode( $atts ) ), 0, 8 );
+}
+
+// Youtube embed url
+function get_youtube_link( $video_url ){
+  $video_url = str_replace( 'https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/', $video_url );
+  return $video_url;
+}
+
+// Youtube video thumbnail
+function get_video_thumbnail( $video_url ){
+  $url_components = parse_url( $video_url );
+  $video_id = substr( $url_components['query'], 2 );
+  $thumbnail = "http://img.youtube.com/vi/$video_id/mqdefault.jpg";
+  return $thumbnail;
 }
 
 function the_youtube_modal( $id, $youtube_link ){

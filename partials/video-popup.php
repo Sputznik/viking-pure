@@ -1,11 +1,9 @@
 <?php
 $video_url = $atts['video_url'];
-$embed_url = str_replace( 'https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/', $video_url  );
-$url_components = parse_url( $video_url );
-$video_id = substr( $url_components['query'], 2 );
+$embed_url = get_youtube_link( $video_url  );
+$thumbnail = get_video_thumbnail( $video_url );
 $modal_id =  get_unique_id( $video_url );
 $frame_id = get_unique_id( $video_url.'wrapper' );
-$thumbnail = "http://img.youtube.com/vi/$video_id/mqdefault.jpg";
 ?>
 <div id="video-<?php _e( $frame_id );?>" class="viking-video-popup">
   <div class="youtube-frame popup">

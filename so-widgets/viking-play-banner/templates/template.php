@@ -1,7 +1,7 @@
 <?php
   $img_path = get_stylesheet_directory_uri().'/assets/logos/player-banner-btn.png';
   $video_url = $instance['banner_video_url'];
-  $embed_url = str_replace( 'https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/', $video_url );
+  $embed_url = get_youtube_link( $video_url );
 ?>
 <div class="viking-play-banner">
   <div class="banner">
