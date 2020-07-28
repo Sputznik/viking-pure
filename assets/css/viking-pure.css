@@ -685,6 +685,14 @@
 
 	}
 
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus{
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav > li > a:focus{
+    outline: transparent;
+  }
+
   /* Active link */
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover,
@@ -762,6 +770,15 @@
   }
 }
 @media(max-width: 520px){
+  .slick-prev:before,
+  .slick-next:before{
+    display: inline-block;
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+
+  }
   .fullwidth .container-videos{width: 100%;}
   /* Slick Arrows */
   .slick-prev.slick-arrow,
