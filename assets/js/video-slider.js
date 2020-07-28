@@ -16,16 +16,16 @@ $(document).ready(function(){
 			pauseOnHover		: true,
 			responsive			: [
 				{
-				breakpoint	: 960,
-				settings	: { slidesToShow: 3}
+					breakpoint	: 1300,
+					settings	: { slidesToShow: 3}
 				},
 				{
-				breakpoint: 768,
+					breakpoint: 769,
 					settings: {slidesToShow: 2}
 				},
 				{
-        breakpoint: 520,
-				settings: { slidesToShow: 1 }
+	        breakpoint: 520,
+					settings: { slidesToShow: 1 }
       }
 		]
 		});
