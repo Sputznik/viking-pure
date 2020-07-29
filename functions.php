@@ -9,6 +9,7 @@ add_action('wp_enqueue_scripts',function(){
 //Include Files
 include('lib/custom-header/header-functions.php');
 include('lib/custom-footer/footer-functions.php');
+include('lib/cpt/cpt.php');
 
 /* ADD SOW FROM THE THEME */
 add_action('siteorigin_widgets_widget_folders', function( $folders ){
