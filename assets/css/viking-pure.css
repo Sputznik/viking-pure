@@ -627,6 +627,13 @@
   color: #ffffff;
   margin-bottom: 35px;
 }
+.articles-masonary .case-study-wrapper .study-icon{
+  max-width: 60px;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: -10px;
+}
 .articles-masonary .case-study-meta .title{
   font-size: 16px;
   letter-spacing: 2.67px;
