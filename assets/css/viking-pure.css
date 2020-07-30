@@ -901,16 +901,16 @@
     z-index: 1;
   }
   .slick-prev, .slick-next{ display: inline-block !important;}
-  .slick-prev{left: 10px; bottom: -24px;}
+  .slick-prev{left: 0px; bottom: -24px;}
   [dir='rtl'] .slick-prev{
-    right: 10px;
+    right: 0px;
     left: auto;
   }
 
-  .slick-next{right: 35px; bottom: -24px;}
+  .slick-next{right: 25px; bottom: -24px;}
   [dir='rtl'] .slick-next{
     right: auto;
-    left: 35px;
+    left: 25px;
   }
   /* Slick Arrows */
 }
