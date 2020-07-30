@@ -562,6 +562,95 @@
 }
 /* VIDEO SLIDER SOW */
 
+/* ORBIT MASONARY GRID */
+/* VIDEO TEMPLATE */
+.articles-masonary .video-thumb {
+  background-color: #eee;
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.articles-masonary .video-thumb .play-btn:after {
+	content: url('<?php _e( $img_path.'/play-btn.png' );?>');
+}
+.articles-masonary .video-meta .video-title{
+  color: #68b2cb;
+  line-height: 31px;
+  font-size: 21px;
+  margin-top: 20px;
+}
+.articles-masonary .video-meta .video-desc{
+  font-size: 18px;
+  line-height: 28px;
+  color: #241f20
+}
+/* VIDEO TEMPLATE */
+/* QUOTES TEMPLATE */
+.articles-masonary .blue-decoration{
+  width: 100px;
+  height: 2px;
+  margin-bottom: 44px;
+  background-color: #68b2cb;
+}
+.articles-masonary .quote-content{
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold !important;
+  line-height: 28px;
+  color: #68b2cb;
+}
+.articles-masonary .quotes-author-meta{ margin-top: 41px; }
+.articles-masonary .media-left{ padding-right: 20px; }
+.articles-masonary .media-left .avatar{
+  display: inline;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+.articles-masonary .media-body .author-name,
+.articles-masonary .media-body .author-desc{
+  font-size: 16px;
+  color: #241f20;
+}
+.articles-masonary .media-body .author-desc{
+  line-height: 20px;
+  display: inline-block;
+}
+/* QUOTES TEMPLATE */
+/* CASESTUDY TEMPLATE */
+.articles-masonary .case-study-wrapper{
+  max-width: 300px;
+  width: 100%;
+  min-height: 300px;
+  background-color: #68b2cb;
+  padding: 19px 21px;
+}
+.articles-masonary .case-study-meta{
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+.articles-masonary .case-study-meta .title{
+  font-size: 16px;
+  letter-spacing: 2.67px;
+}
+.articles-masonary .case-study-meta .desc{
+  font-size: 21px;
+  line-height: 31px;
+}
+.articles-masonary .btn-learn-more{
+  padding: 10px 30px;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+}
+.articles-masonary .btn-learn-more:active{box-shadow: none;}
+.articles-masonary .btn-learn-more:focus{outline: none;}
+/* CASESTUDY TEMPLATE */
+
+/* ORBIT MASONARY GRID */
 
 /* Ovverride default BS3 styles */
 @media( min-width: 769px ){
@@ -617,7 +706,21 @@
     display: grid;
   }
   /* SOW VIKING BULLET LIST */
+  /* ORBIT MASONARY TEMPLATE */
+  .articles-masonary .orbit-article{width: 30%;margin-bottom: 45px;}
+  /* ORBIT MASONARY TEMPLATE */
 }
+
+@media(max-width: 991px){
+  /* ORBIT MASONARY TEMPLATE */
+  .articles-masonary .orbit-article{
+    width: calc( 50% - 20px );
+    margin-bottom: 45px;
+   }
+   .articles-masonary .case-study-wrapper{max-width: 100%}
+  /* ORBIT MASONARY TEMPLATE */
+}
+
 
 @media only screen and (max-width: 768px) and (min-width: 768px){
   #bs-example-navbar-collapse-1,
@@ -756,7 +859,16 @@
     align-items: center;
    }
   /* SOW VIKING SIDEBAR */
-
+  /* MASONARY VIDEO */
+  .articles-masonary .video-meta .video-title{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .articles-masonary .video-meta .video-desc{
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /* MASONARY VIDEO */
 }
 @media(max-width:600px){
   .header-right-wrapper.navbar-nav {
@@ -768,6 +880,9 @@
     padding-top: 125px;
     padding-bottom: 65px;
   }
+  /* ORBIT MASONARY TEMPLATE */
+  .articles-masonary .orbit-article{width: 100% !important;}
+  /* ORBIT MASONARY TEMPLATE */
 }
 @media(max-width: 520px){
   .slick-prev:before,
