@@ -17,3 +17,8 @@ $frame_id = get_unique_id( $video_url.'wrapper' );
   <p class="video-desc"><?php the_excerpt();?></p>
 </div>
 <?php the_youtube_modal( $modal_id, $embed_url );?>
+<style>
+.articles-masonary .video-thumb .play-btn:after {
+  content: url('<?php _e( $img_path.'/play-btn.png' );?>');
+}
+</style>

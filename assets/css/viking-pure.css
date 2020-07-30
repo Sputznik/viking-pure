@@ -571,9 +571,6 @@
   background-position: center;
   position: relative;
 }
-.articles-masonary .video-thumb .play-btn:after {
-	content: url('<?php _e( $img_path.'/play-btn.png' );?>');
-}
 .articles-masonary .video-meta .video-title{
   color: #68b2cb;
   line-height: 31px;
