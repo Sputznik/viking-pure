@@ -563,6 +563,26 @@
 /* VIDEO SLIDER SOW */
 
 /* ORBIT MASONARY GRID */
+
+/* MASONARY HEADLINE */
+.articles-masonary .orbit-article,
+.articles-masonary .grid-sizer{width: 30%;}
+.orbit-article:nth-child(3){margin-top: 25px;}
+.orbit-article.masonary-headline{width:64%;height: 300px;color:#68b2cb;}
+.orbit-article.masonary-headline h3{
+  font-size:36px !important;
+  font-weight: 600;
+  line-height: 1.3!important;
+  margin-top:0;
+  margin-bottom:24px;
+}
+.orbit-article.masonary-headline h1{
+  font-size:86px !important;
+  letter-spacing: 2.1px;
+  margin: 0;
+}
+/* MASONARY HEADLINE */
+
 /* VIDEO TEMPLATE */
 .articles-masonary .video-thumb {
   background-color: #eee;
@@ -711,17 +731,27 @@
   }
   /* SOW VIKING BULLET LIST */
   /* ORBIT MASONARY TEMPLATE */
-  .articles-masonary .orbit-article{width: 30%;margin-bottom: 45px;}
+  .articles-masonary .orbit-article{margin-bottom: 45px;}
   /* ORBIT MASONARY TEMPLATE */
 }
 
 @media(max-width: 991px){
   /* ORBIT MASONARY TEMPLATE */
+  .articles-masonary .grid-sizer,
   .articles-masonary .orbit-article{
     width: calc( 50% - 20px );
     margin-bottom: 45px;
    }
    .articles-masonary .case-study-wrapper{max-width: 100%}
+   .orbit-article.masonary-headline{width:100%;height: auto;}
+   .orbit-article.masonary-headline h3,
+   .orbit-article.masonary-headline h1{ text-align: center;}
+   .orbit-article.masonary-headline h3{
+     font-size:26px !important;
+     margin-bottom:20px;
+   }
+   .orbit-article.masonary-headline h1{font-size:46px !important;}
+   .orbit-article:nth-child(3){margin-top: 0;}
   /* ORBIT MASONARY TEMPLATE */
 }
 
