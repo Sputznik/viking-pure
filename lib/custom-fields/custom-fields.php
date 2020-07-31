@@ -45,6 +45,19 @@ add_filter( 'orbit_meta_box_vars', function( $meta_box ){
 				'learn_more' => array(
 					'type' => 'text',
 					'text' => 'Learn More URL'
+				),
+				'study_icon' => array(
+					'type' => 'dropdown',
+					'text' => 'Select Icon',
+					'options'	=>	array(
+						'healthcare'						=>	'HEALTHCARE',
+						'assisted-living'				=>	'ASSISTED LIVING',
+						'golf-courses'					=>	'GOLF COURSES',
+						'food-restaurants'			=>	'FOOD/RESTAURANTS',
+						'schools'								=>	'SCHOOLS',
+						'hospitality'						=>	'HOSPITALITY',
+						'commercial-buildings'	=>	'COMMERCIAL BUILDINGS',
+					)
 				)
 			)
 		)
