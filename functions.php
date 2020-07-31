@@ -96,7 +96,9 @@ add_filter('wp_nav_menu_items', function( $items, $args ){
 
 
 function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' ){
-	ob_start();
+  $green_seal = "green-seal-certified.svg";
+  if( $list_class == 'viking-logos-mobile' ){ $green_seal = "green-seal-certified-white.svg"; }
+  ob_start();
 	?>
 	<ul class='list-inline <?php echo $list_class; ?>'>
 		<?php if( $quoteBtn ):?>
@@ -104,7 +106,7 @@ function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' )
 		<?php endif; ?>
 		<li>
 			<a href="#">
-				<img class="logo-one" src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/green-seal-certified.svg" />
+				<img class="logo-one" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$green_seal;?>" />
 			</a>
 		</li>
 		<li>
