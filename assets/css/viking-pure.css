@@ -772,6 +772,7 @@
     left: -35px;
   }
   /* Slick Arrows */
+  .bullet-list-wrapper .bullet-list ul {display: grid;}
 }
 @media(max-width: 768px){
   #bs-example-navbar-collapse-1{
