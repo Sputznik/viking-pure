@@ -956,6 +956,12 @@
     width: 100%;
   }
 }
+
+@media(min-width: 521px) and (max-width: 968px) {
+  .viking-footer, .footer-section-two{max-width: 96%;}
+  .viking-footer{ margin: 0 auto;}
+}
+
 @media(max-width: 699px){
   .footer-section-two .left-logo{
     max-width: 180px;
