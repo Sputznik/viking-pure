@@ -27,7 +27,7 @@
 </div>
 
 <!-- BACK TO TOP -->
-<a id="back-top" href="#">
+<a id="back-top" href="#" style="display:none;">
   <img src="<?php _e($img_path);?>" class="middle" alt="arrow-up">
   <span class="">MORE INDUSTRIES</span>
 </a>

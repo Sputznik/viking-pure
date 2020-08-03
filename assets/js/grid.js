@@ -9,9 +9,13 @@ $(document).ready(function(){
   });
 
   // BACK TO TOP BUTTON
+  // Find the bottom offset of the sidebar widget
+  var sidebar   = $('.tabs-wrapper');
+  var bottom    = sidebar.offset().top + sidebar.height();
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+
+    if ($(this).scrollTop() > bottom ) {
       $('#back-top').fadeIn();
       } else {
       $('#back-top').fadeOut();
