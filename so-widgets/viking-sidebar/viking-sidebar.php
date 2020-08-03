@@ -44,7 +44,8 @@ class Viking_Pure_Sidebar extends SiteOrigin_Widget {
     				),
             'tab_url' => array(
 							'type' => 'text',
-							'label' => __( 'Tab Url', 'siteorigin-widgets' )
+							'label' => __( 'Tab ID', 'siteorigin-widgets' ),
+							'description' => __( 'Tab ID must be in lower case without # symbol. Example: food_service',  'siteorigin-widgets' )
 						),
             'image' => array(
 							'type' 		=> 'media',

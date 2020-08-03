@@ -550,6 +550,31 @@
  }
 .footer-section-two .logos{margin-top: 15px;}
 /* VIKING FOOTER */
+/* BACK TO TOP BUTTON VIKING SIDEBAR*/
+#back-top {
+	width: 230px;
+	height: 64px;
+	position: fixed;
+	top: 50%;
+	right: 0;
+	display: flex;
+  align-items: center;
+	background-color: #68b2cb;
+	border:1px solid #68b2cb;
+  text-decoration: none !important;
+  z-index: 99;
+}
+#back-top img{
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#back-top span{
+  color:#ffffff;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+}
+/* BACK TO TOP BUTTON VIKING SIDEBAR*/
 
 /* VIDEO SLIDER SOW */
 @media(max-width:1300px){
@@ -803,6 +828,9 @@
   }
   /* Slick Arrows */
   .bullet-list-wrapper .bullet-list ul {display: grid;}
+  #back-top {width: 180px;}
+  #back-top span{ font-size: 12px;}
+  #back-top img {width: 35px;}
 }
 @media(max-width: 768px){
   #bs-example-navbar-collapse-1{
@@ -918,6 +946,18 @@
   /* ORBIT MASONARY TEMPLATE */
   .articles-masonary .orbit-article{width: 100% !important;}
   /* ORBIT MASONARY TEMPLATE */
+  /* BACK TO TOP BUTTON VIKING SIDEBAR*/
+  #back-top {
+  	width: 50px;
+    height: 50px;
+  }
+  #back-top img{
+    width: 35px;
+    margin-left: 6px;
+    margin-right: 10px;
+  }
+  #back-top span{display: none;}
+
 }
 @media(max-width: 520px){
   .slick-prev:before,
