@@ -46,9 +46,9 @@
   vertical-align:middle;
   font-size: 14px;
   letter-spacing: 1px;
-  font-weight: bold;
+  margin-left: 15px;
 }
-.viking-sidebar .item{ margin-left: 10px;}
+.viking-sidebar .item{ margin: 15px 0 15px 20px;}
 .viking-sidebar img {
   width: 100%;
   max-width:62px;
