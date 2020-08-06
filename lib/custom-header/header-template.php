@@ -4,7 +4,7 @@
       <!-- Brand and toggle get grouped for better mobile display -->
   		<div class="navbar-header">
 
-				<a href="#" class='main-logo'>
+				<a href="<?php bloginfo('url');?>" class='main-logo'>
 					<img src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/viking-pure-logo.svg" />
 				</a>
 
