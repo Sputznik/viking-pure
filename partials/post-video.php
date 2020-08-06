@@ -14,7 +14,7 @@ $frame_id = get_unique_id( $video_url.'wrapper' );
 </div>
 <div class="video-meta">
   <h5 class="video-title"><?php the_title();?></h5>
-  <p class="video-desc"><?php the_excerpt();?></p>
+  <div class="video-desc"><?php the_excerpt();?></div>
 </div>
 <?php the_youtube_modal( $modal_id, $embed_url );?>
 <style>

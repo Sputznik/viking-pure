@@ -9,7 +9,7 @@
       <img class="study-icon" src="<?php _e( "$img_path/$icon.png" );?>" alt="<?php _e( $icon );?>" />
     <?php endif;?>
     <h5 class="title"><?php the_title();?></h5>
-    <p class="desc"><?php the_excerpt();?></p>
+    <div class="desc"><?php the_excerpt();?></div>
   </div>
   <a class="btn btn-learn-more" href="<?php _e( $btn_url );?>" target="_blank">LEARN MORE</a>
 </div>
