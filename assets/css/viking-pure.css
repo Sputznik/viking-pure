@@ -883,7 +883,9 @@
    margin-right: 15px;
  }
  /* VIKING SCROLLING LIST SOW */
-
+ /* VIKING CAROUSEL SOW */
+ .carousel-inner > .item > .item-body > img{ height: 550px !important; }
+/* VIKING CAROUSEL SOW */
 }
 @media(max-width: 768px){
   #bs-example-navbar-collapse-1{
@@ -991,7 +993,7 @@
   .carousel-inner .item-body{ display: block;}
   .carousel-inner > .item > .item-body > img{ height: 400px;}
   .carousel-control.left,
-  .carousel-control {top: 96%;}
+  .carousel-control {top: 94%;}
   .carousel-control.left{left: 20%;}
   .carousel-control.right{right: 20%;}
   .carousel-indicators {left: 50%;bottom: 0px;}
@@ -1158,7 +1160,7 @@
    /* VIKING CAROUSEL SOW */
    .carousel-control.left{left: 0;}
    .carousel-control.right{right: 0;}
-   .carousel-control {top: 94% !important;}
+   .carousel-control {top: 95% !important;}
    .carousel-control img{ width: 28px; height: 28px;}
    /* VIKING CAROUSEL SOW */
 
