@@ -605,6 +605,11 @@
 }
 /* VIKING CAROUSEL SOW */
 
+/* VIKING SCROLLING LIST SOW */
+.viking-scrolling-wrapper .horizontallist-images img{ max-width: 100%; height: auto;}
+/* VIKING SCROLLING LIST SOW */
+
+
 /* VIDEO SLIDER SOW */
 @media(max-width:1300px){
   .fullwidth .container-videos{ width: 85%;}
@@ -787,6 +792,14 @@
   /* ORBIT MASONARY TEMPLATE */
   .articles-masonary .orbit-article{margin-bottom: 45px;}
   /* ORBIT MASONARY TEMPLATE */
+  /* VIKING SCROLLING LIST SOW */
+  .viking-scrolling-wrapper .horizontallist-images, ul.verticallist-videos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+  }
+  .viking-scrolling-wrapper{ width: 960px; margin: 0 auto;}
+  /* VIKING SCROLLING LIST SOW */
 }
 
 @media(max-width: 991px){
@@ -860,6 +873,15 @@
   #back-top {width: 180px;}
   #back-top span{ font-size: 12px;}
   #back-top img {width: 35px;}
+
+ /* VIKING SCROLLING LIST SOW */
+ .viking-scrolling-wrapper .horizontallist-images li.orbit-article {
+   width: 320px;
+   display: inline-block;
+   margin-right: 15px;
+ }
+ /* VIKING SCROLLING LIST SOW */
+
 }
 @media(max-width: 768px){
   #bs-example-navbar-collapse-1{
@@ -967,13 +989,36 @@
   .carousel-inner .item-body{ display: block;}
   .carousel-inner > .item > .item-body > img{ height: 400px;}
   .carousel-control.left,
-  .carousel-control {top: 93%;}
+  .carousel-control {top: 96%;}
   .carousel-control.left{left: 20%;}
   .carousel-control.right{right: 20%;}
   .carousel-indicators {left: 50%;bottom: 0px;}
   /* VIKING CAROUSEL SOW */
 
+ /* VIKING SCROLLING LIST SOW */
+ .viking-scrolling-wrapper .horizontallist-images {
+   max-width: 100%;
+   overflow: auto;
+   overflow-y: hidden;
+   -webkit-overflow-scrolling: touch;
+   white-space: nowrap;
+   display: block;
+ }
+
+ .viking-scrolling-wrapper .horizontallist-images li.orbit-article {
+   display: inline-block;
+   margin-right: 15px;
+   padding-bottom: 25px;
+ }
+ /* VIKING SCROLLING LIST SOW */
+
 }
+
+ /* VIKING SCROLLING LIST SOW */
+ @media(max-width:767px){
+   .viking-scrolling-wrapper .horizontallist-images li.orbit-article {width: 150px;}
+ }
+  /* VIKING SCROLLING LIST SOW */
 @media(max-width:600px){
   .header-right-wrapper.navbar-nav {
     padding-top: 40px;
