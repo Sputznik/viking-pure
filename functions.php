@@ -2,11 +2,10 @@
 
 /*ENQUEUE STYLES*/
 add_action('wp_enqueue_scripts',function(){
-  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.26' );
-  wp_enqueue_script( 'video-slider-js', get_stylesheet_directory_uri().'/assets/js/video-slider.js', array( 'jquery' ), '1.0.5', true );
+  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.27' );
+  wp_enqueue_script( 'video-slider-js', get_stylesheet_directory_uri().'/assets/js/video-slider.js', array( 'jquery' ), '1.0.6', true );
   wp_enqueue_script( 'masonary-js', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js', array(), null, true );
   wp_enqueue_script( 'grid-js', get_stylesheet_directory_uri().'/assets/js/grid.js', array( 'jquery' ), '1.0.2', true );
-
 },99);
 
 //Include Files
@@ -14,6 +13,7 @@ include('lib/custom-header/header-functions.php');
 include('lib/custom-footer/footer-functions.php');
 include('lib/cpt/cpt.php');
 include('lib/custom-fields/custom-fields.php');
+include('lib/ui/class-youtube-video.php');
 
 /* ADD SOW FROM THE THEME */
 add_action('siteorigin_widgets_widget_folders', function( $folders ){
@@ -21,46 +21,17 @@ add_action('siteorigin_widgets_widget_folders', function( $folders ){
   return $folders;
 });
 
-function get_unique_id( $atts ){
-  return substr( md5( json_encode( $atts ) ), 0, 8 );
-}
-
-// Youtube embed url
-function get_youtube_link( $video_url ){
-  $video_url = str_replace( 'https://www.youtube.com/watch?v=', 'https://www.youtube.com/embed/', $video_url );
-  return $video_url;
-}
-
-// Youtube video thumbnail
-function get_video_thumbnail( $video_url ){
-  $url_components = parse_url( $video_url );
-  $video_id = substr( $url_components['query'], 2 );
-  $thumbnail = "http://img.youtube.com/vi/$video_id/mqdefault.jpg";
-  return $thumbnail;
-}
-
-function the_youtube_modal( $id, $youtube_link ){
-  ?>
-  <div id="<?php _e( $id );?>" class="ytube-video modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body text-center">
-          <iframe width="420" height="315" src="<?php echo $youtube_link;?>"></iframe>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div>
-  <?php
-}
 
 // VIDEO POPUP SHORTCODE
 add_shortcode( 'viking_video_popup',function( $atts ){
+  global $youtube;
   $atts = shortcode_atts(array(
     'video_url' => '',
+    'height'    => '280px'
   ), $atts, 'viking_video_popup');
 
   ob_start();
-  require( get_stylesheet_directory().'/partials/video-popup.php' );
+  $youtube->create_video_thumb($atts['video_url'], '280px');
   return ob_get_clean();
 });
 

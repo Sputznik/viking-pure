@@ -106,7 +106,8 @@
 /* SOW VIKING PLAYER BANNER  */
 
 /* Viking-video-popup shortcode*/
-.viking-video-popup .youtube-frame.popup{
+/* .viking-video-popup .youtube-frame.popup */
+.youtube-frame{
   width: 100%;
   height: 280px;
   background-position: center;
@@ -848,7 +849,8 @@
   /* SOW VIKING SIDEBAR */
 
   /* Viking-video-popup shortcode*/
-  .viking-video-popup .youtube-frame.popup{ height: 360px;}
+  /* .viking-video-popup .youtube-frame.popup */
+  .youtube-frame{ height: 360px;}
   /* Viking-video-popup shortcode*/
 
   /* Slick Arrows */
