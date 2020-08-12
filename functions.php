@@ -2,7 +2,7 @@
 
 /*ENQUEUE STYLES*/
 add_action('wp_enqueue_scripts',function(){
-  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.27' );
+  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.28' );
   wp_enqueue_script( 'video-slider-js', get_stylesheet_directory_uri().'/assets/js/video-slider.js', array( 'jquery' ), '1.0.6', true );
   wp_enqueue_script( 'masonary-js', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js', array(), null, true );
   wp_enqueue_script( 'grid-js', get_stylesheet_directory_uri().'/assets/js/grid.js', array( 'jquery' ), '1.0.2', true );
@@ -13,28 +13,12 @@ include('lib/custom-header/header-functions.php');
 include('lib/custom-footer/footer-functions.php');
 include('lib/cpt/cpt.php');
 include('lib/custom-fields/custom-fields.php');
-include('lib/ui/class-youtube-video.php');
 
 /* ADD SOW FROM THE THEME */
 add_action('siteorigin_widgets_widget_folders', function( $folders ){
   $folders[] = get_stylesheet_directory() . '/so-widgets/';
   return $folders;
 });
-
-
-// VIDEO POPUP SHORTCODE
-add_shortcode( 'viking_video_popup',function( $atts ){
-  global $youtube;
-  $atts = shortcode_atts(array(
-    'video_url' => '',
-    'height'    => '280px'
-  ), $atts, 'viking_video_popup');
-
-  ob_start();
-  $youtube->create_video_thumb($atts['video_url'], '280px');
-  return ob_get_clean();
-});
-
 
 /*
 // Header Right Logos
