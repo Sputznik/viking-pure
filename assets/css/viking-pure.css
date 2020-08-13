@@ -105,6 +105,12 @@
 }
 /* SOW VIKING PLAYER BANNER  */
 
+/* SOW VIKING LOGO SLIDER WITH QUOTE SECTION*/
+.quotes-wrapper{max-width:1170px;margin: 0 auto;}
+.quotes-wrapper .quote-pane{display: none;}
+.quotes-wrapper .quote-pane.active{display: block;}
+/* SOW VIKING LOGO SLIDER WITH QUOTE SECTION*/
+
 /* Ovverride default BS3 styles */
 .navbar { min-height: 80px; margin-bottom: 0;}
 
