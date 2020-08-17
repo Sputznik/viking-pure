@@ -639,24 +639,13 @@
   line-height: 28px;
   color: #68b2cb;
 }
-.articles-masonary .quotes-author-meta{ margin-top: 41px; }
-.articles-masonary .media-left{ padding-right: 20px; }
-.articles-masonary .media-left .avatar{
+.articles-masonary .quote-logo .avatar{
   display: inline;
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-}
-.articles-masonary .media-body .author-name,
-.articles-masonary .media-body .author-desc{
-  font-size: 16px;
-  color: #241f20;
-}
-.articles-masonary .media-body .author-desc{
-  line-height: 20px;
-  display: inline-block;
+  width: 200px;
+  height: auto;
 }
 /* QUOTES TEMPLATE */
+
 /* CASESTUDY TEMPLATE */
 .articles-masonary .case-study-wrapper{
   max-width: 300px;
