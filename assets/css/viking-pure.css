@@ -589,16 +589,16 @@
 /* MASONARY HEADLINE */
 .articles-masonary .orbit-article,
 .articles-masonary .grid-sizer{width: 30%;}
-.articles-masonary .orbit-article:nth-child(3){margin-top: 25px;}
-.orbit-article.masonary-headline{width:64%;height: 300px;color:#68b2cb;}
-.orbit-article.masonary-headline h3{
+.articles-masonary .grid-sizer{margin-bottom: 30px;}
+.masonary-headline{width:80%;height: 300px;color:#68b2cb;}
+.masonary-headline h3{
   font-size:36px !important;
   font-weight: 600;
   line-height: 1.3!important;
   margin-top:0;
   margin-bottom:24px;
 }
-.orbit-article.masonary-headline h1{
+.masonary-headline h1{
   font-size:86px !important;
   letter-spacing: 2.1px;
   margin: 0;
@@ -763,15 +763,14 @@
     margin-bottom: 45px;
    }
    .articles-masonary .case-study-wrapper{max-width: 100%}
-   .orbit-article.masonary-headline{width:100%;height: auto;}
-   .orbit-article.masonary-headline h3,
-   .orbit-article.masonary-headline h1{ text-align: center;}
-   .orbit-article.masonary-headline h3{
+   .masonary-headline{width:100%;height: auto;}
+   .masonary-headline h3,
+   .masonary-headline h1{ text-align: center;}
+   .masonary-headline h3{
      font-size:26px !important;
      margin-bottom:20px;
    }
-   .orbit-article.masonary-headline h1{font-size:46px !important;}
-   .articles-masonary .orbit-article:nth-child(3){margin-top: 0;}
+   .masonary-headline h1{font-size:46px !important;}
   /* ORBIT MASONARY TEMPLATE */
 }
 
