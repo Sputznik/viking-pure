@@ -21,18 +21,10 @@ add_filter( 'orbit_meta_box_vars', function( $meta_box ){
 			'id'			=> 'quotes-meta-field',
 			'title'		=> 'Additional Information',
 			'fields'	=> array(
-				'author_avatar' => array(
+				'quote_logo' => array(
 					'type' => 'text',
-					'text' => 'Author Image URL'
+					'text' => 'Image URL'
 				),
-				'author_name' => array(
-					'type' => 'text',
-					'text' => 'Author Name'
-				),
-				'author_details' => array(
-					'type' => 'text',
-					'text' => 'Author Details'
-				)
 			)
 		)
 	);
