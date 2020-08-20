@@ -36,6 +36,7 @@ $(document).ready(function(){
 
   // BACK TO TOP BUTTON
 
-
+  /* Show NewsLetter Modal */
+  $('#newsletter-modal').modal('show');
 
 });

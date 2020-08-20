@@ -36,3 +36,21 @@
     <img src="<?php _e( "$img_path/woolsafe-approved.svg" );?>">
   </div>
 </div>
+
+
+<!-- NewsLetter Modal -->
+<?php if( is_active_sidebar( 'viking-newsletter' ) ):?>
+<div class="modal fade" id="newsletter-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+        <?php dynamic_sidebar( 'viking-newsletter' ); ?>
+      </div>
+    </div>
+  </div>
+</div>
+<?php endif;?>
+<!-- NewsLetter Modal -->
