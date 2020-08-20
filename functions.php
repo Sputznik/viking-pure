@@ -2,7 +2,7 @@
 
 /*ENQUEUE STYLES*/
 add_action('wp_enqueue_scripts',function(){
-  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.31' ); 
+  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.31' );
   wp_enqueue_script( 'video-slider-js', get_stylesheet_directory_uri().'/assets/js/video-slider.js', array( 'jquery' ), '1.0.6', true );
   wp_enqueue_script( 'masonary-js', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js', array(), null, true );
   wp_enqueue_script( 'grid-js', get_stylesheet_directory_uri().'/assets/js/grid.js', array( 'jquery' ), '1.0.2', true );
@@ -15,6 +15,7 @@ include('lib/custom-header/header-functions.php');
 include('lib/custom-footer/footer-functions.php');
 include('lib/cpt/cpt.php');
 include('lib/custom-fields/custom-fields.php');
+include('lib/widgets/widgets.php');
 
 /* ADD SOW FROM THE THEME */
 add_action('siteorigin_widgets_widget_folders', function( $folders ){
@@ -80,8 +81,6 @@ function getQuoteBtn(){
 	return '<a target="_blank" href="#" class="btn btn-quote">GET A QUOTE</a>';
 }
 
-
-
 // Override parent themes footer template
 add_action('sp_pre_footer',function(){
   include('lib/custom-footer/footer-template.php');
@@ -89,18 +88,6 @@ add_action('sp_pre_footer',function(){
 
 //Override parent themes footer-class
 add_filter( 'sp_prefooter_class', function(){ return 'container-fluid viking-footer-wrapper'; });
-
-add_action( 'widgets_init', function(){
-  register_sidebar( array(
-    'name'          => 'Viking Pre Footer',
-    'id'            => 'viking-prefooter',
-    'description'   => 'Appears above the footer area',
-    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    'after_widget'  => '</aside>',
-    'before_title'  => '<h3 class="widget-title">',
-    'after_title'   => '</h3>',
-  ) );
-});
 
 function getUniqueID( $data ){
 	return substr( md5( json_encode( $data ) ), 0, 8 );
