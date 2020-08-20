@@ -605,9 +605,6 @@
 /* ORBIT MASONARY GRID */
 
 /* MASONARY HEADLINE */
-.articles-masonary .orbit-article,
-.articles-masonary .grid-sizer{width: 30%;}
-.articles-masonary .grid-sizer{margin-bottom: 30px;}
 .masonary-headline{width:80%;height: 300px;color:#68b2cb;}
 .masonary-headline h3{
   font-size:36px !important;
@@ -651,15 +648,15 @@
   background-color: #68b2cb;
 }
 .articles-masonary .quote-content{
-  font-size: 18px;
+  font-size: 24px;
   font-style: italic;
   font-weight: bold !important;
-  line-height: 28px;
+  line-height: 30px;
   color: #68b2cb;
 }
 .articles-masonary .quote-logo .avatar{
   display: inline;
-  width: 200px;
+  max-width: 130px;
   height: auto;
 }
 /* QUOTES TEMPLATE */
@@ -759,9 +756,7 @@
     display: grid;
   }
   /* SOW VIKING BULLET LIST */
-  /* ORBIT MASONARY TEMPLATE */
-  .articles-masonary .orbit-article{margin-bottom: 45px;}
-  /* ORBIT MASONARY TEMPLATE */
+
   /* VIKING SCROLLING LIST SOW */
   .viking-scrolling-wrapper .horizontallist-images, ul.verticallist-videos {
     display: grid;
@@ -773,11 +768,28 @@
   /* VIKING SCROLLING LIST SOW */
 }
 
+@media( min-width: 992px ) {
+  /* ORBIT MASONARY TEMPLATE */
+  .articles-masonary .gutter-sizer { width: 7%; }
+  .articles-masonary .orbit-article,
+  .articles-masonary .grid-sizer{
+    width: calc( 29% - 10px );
+    margin-bottom: 120px;
+    height: 300px;
+  }
+/* ORBIT MASONARY TEMPLATE */
+}
+
+@media(min-width: 992px) and (max-width: 1080px) {
+  .masonary-headline{width:100%;}
+}
+
 @media(max-width: 991px){
   /* ORBIT MASONARY TEMPLATE */
+  .articles-masonary .gutter-sizer { width: 4%; }
   .articles-masonary .grid-sizer,
   .articles-masonary .orbit-article{
-    width: calc( 50% - 20px );
+    width: calc( 50% - 2% );
     margin-bottom: 45px;
    }
    .articles-masonary .case-study-wrapper{max-width: 100%}
@@ -851,6 +863,11 @@
  /* VIKING CAROUSEL SOW */
  .carousel-inner > .item > .item-body > img{ object-fit: contain; height: 550px !important; }
 /* VIKING CAROUSEL SOW */
+
+/* MASONARY VIDEO */
+.articles-masonary .sp-youtube-frame {height: 200px !important;}
+/* MASONARY VIDEO */
+
 }
 @media(max-width: 768px){
   #bs-example-navbar-collapse-1{
@@ -942,6 +959,7 @@
     font-size: 16px;
     line-height: 22px;
   }
+  .masonary-headline{margin-bottom: 30px;}
   /* MASONARY VIDEO */
 
   /* VIKING CAROUSEL SOW */

@@ -3,9 +3,10 @@ $(document).ready(function(){
 
   $('.articles-masonary').masonry({
     itemSelector: '.orbit-article',
-    gutter: 40,
+    gutter: '.gutter-sizer',
     columnWidth: '.grid-sizer',
-    percentPosition: true
+    percentPosition: true,
+    horizontalOrder: true
   });
 
   // BACK TO TOP BUTTON
@@ -37,6 +38,6 @@ $(document).ready(function(){
   // BACK TO TOP BUTTON
 
   /* Show NewsLetter Modal */
-  $('#newsletter-modal').modal('show');
+  if( $('#newsletter-modal').length ){ $('#newsletter-modal').modal('show'); }
 
 });
