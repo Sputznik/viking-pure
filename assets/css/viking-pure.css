@@ -512,6 +512,9 @@
   color: #ffffff;
  }
 .footer-section-two .logos{margin-top: 15px;}
+.footer-section-two .logos a{ display: inline-block;}
+.footer-section-two .logos a:hover{text-decoration: none;}
+.footer-section-two .logos a:focus{ outline: none;}
 /* VIKING FOOTER */
 /* BACK TO TOP BUTTON VIKING SIDEBAR*/
 #back-top {

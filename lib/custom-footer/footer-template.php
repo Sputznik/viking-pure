@@ -32,8 +32,12 @@
       +1 (386) 428-9800
     </p>
   <div class="logos">
-    <img src="<?php _e( "$img_path/green-seal-certified-white.svg" );?>">
-    <img src="<?php _e( "$img_path/woolsafe-approved.svg" );?>">
+		<a href="https://greenseal.org/">
+    	<img src="<?php _e( "$img_path/green-seal-certified-white.svg" );?>">
+		</a>
+		<a href="https://www.woolsafe.org/">
+    	<img src="<?php _e( "$img_path/woolsafe-approved.svg" );?>">
+		</a>
   </div>
 </div>
 
