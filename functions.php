@@ -78,7 +78,7 @@ function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' )
 }
 
 function getQuoteBtn(){
-	return '<a target="_blank" href="#" class="btn btn-quote">GET A QUOTE</a>';
+	return '<a target="_blank" href="#viking-quote-modal" data-toggle="modal" class="btn btn-quote">GET A QUOTE</a>';
 }
 
 // Override parent themes footer template
