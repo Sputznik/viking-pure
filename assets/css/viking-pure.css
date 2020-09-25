@@ -111,6 +111,23 @@
 .quotes-wrapper .quote-pane.active{display: block;}
 /* SOW VIKING LOGO SLIDER WITH QUOTE SECTION*/
 
+
+/* NEWSLETTER HEADER BLUE STRIP */
+.header-blue-bg{ background-color: #68b2cb; height: 45px; }
+.header-blue-bg > .newsletter-btn{ display: block; text-decoration: none; }
+.header-blue-bg > .newsletter-btn h6{
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 45px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: #ffffff;
+}
+.newsletter-btn img{ width:100%; max-width: 45px; vertical-align: middle; margin-bottom: 3px; }
+/* NEWSLETTER HEADER BLUE STRIP */
+
+
 /* Ovverride default BS3 styles */
 .navbar { min-height: 80px; margin-bottom: 0;}
 
@@ -1146,6 +1163,8 @@
    /* VIKING CAROUSEL SOW */
 
 }
+@media(max-width: 320px){ .header-blue-bg{ padding: 0; } }
+
 @media(max-width:300px){
   .viking-footer{
     display: block;

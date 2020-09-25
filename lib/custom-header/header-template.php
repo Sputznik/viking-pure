@@ -1,3 +1,8 @@
+<div class="container-fluid header-blue-bg">
+  <a href="#newsletter-modal" data-toggle="modal" class="newsletter-btn">
+    <h6>SIGN UP FOR OUR NEWSLETTER <span><img src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/header-arrow.png" /></span> </h6>
+  </a>
+</div>
 <div class="sticky-transparent-header" data-spy="affix" data-offset-top="80">
   <nav class="navbar navbar-default header5">
     <div class="container-fluid"><!-- .container-->

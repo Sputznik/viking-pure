@@ -37,7 +37,4 @@ $(document).ready(function(){
 
   // BACK TO TOP BUTTON
 
-  /* Show NewsLetter Modal */
-  if( $('#newsletter-modal').length ){ $('#newsletter-modal').modal('show'); }
-
 });
