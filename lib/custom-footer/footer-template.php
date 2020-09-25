@@ -42,19 +42,34 @@
 </div>
 
 
-<!-- NewsLetter Modal -->
-<?php if( is_active_sidebar( 'viking-newsletter' ) ):?>
-<div class="modal fade" id="newsletter-modal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-        <?php dynamic_sidebar( 'viking-newsletter' ); ?>
-      </div>
-    </div>
-  </div>
-</div>
-<?php endif;?>
-<!-- NewsLetter Modal -->
+<?php
+	$modals = array(
+		'newsletter' => array(
+			'id' 				=> 'viking-newsletter',
+			'modal-id'	=> 'newsletter-modal'
+		),
+		'quote' => array(
+			'id' 				=> 'viking-get-quote',
+			'modal-id'	=> 'viking-quote-modal'
+		)
+	);
+?>
+
+<!-- Modal -->
+<?php foreach ( $modals as $modal ): ?>
+	<?php if( is_active_sidebar( $modal['id'] ) ):?>
+	<div class="modal fade" id="<?php _e( $modal['modal-id'] ); ?>" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+	        <?php dynamic_sidebar( $modal['id'] ); ?>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<?php endif;?>
+<?php endforeach;?>
+<!--  Modal -->
