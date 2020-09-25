@@ -22,4 +22,14 @@ add_action( 'widgets_init', function(){
     'after_title'   => '</h3>',
   ) );
 
+  register_sidebar( array(
+    'name'          => 'Get A Quote',
+    'id'            => 'viking-get-quote',
+    'description'   => 'Appears in the get a quote modal',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h3 class="widget-title">',
+    'after_title'   => '</h3>',
+  ) );
+
 });
