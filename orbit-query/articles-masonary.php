@@ -29,5 +29,11 @@
     </li>
   <?php endif;?>
 
+  <?php if( $post_type === 'press'):?>
+    <li class="orbit-article">
+      <?php get_template_part( "partials/post", "press" );?>
+    </li>
+  <?php endif;?>
+
   <?php endwhile;?>
 </ul>
