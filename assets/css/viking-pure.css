@@ -712,7 +712,8 @@
   font-size: 16px;
   letter-spacing: 2.67px;
 }
-.articles-masonary .case-study-meta .desc p{
+.articles-masonary .case-study-meta .desc p,
+.articles-masonary .press-release-wrapper .desc p{
   font-size: 21px;
   line-height: 31px;
 }
@@ -727,6 +728,22 @@
 .articles-masonary .btn-learn-more:active{box-shadow: none;}
 .articles-masonary .btn-learn-more:focus{outline: none;}
 /* CASESTUDY TEMPLATE */
+
+/* PRESS TEMPLATE */
+.articles-masonary .press-release-wrapper{
+  max-width: 300px;
+  width: 100%;
+  padding: 26px 21px;
+  border-radius: 4px;
+  background-color: #f0f3f5;
+}
+.articles-masonary .press-release-wrapper .desc p{ color: #68b2cb; }
+.articles-masonary .press-release-wrapper .btn-learn-more{
+  color: #68b2cb;
+  border: 1px solid #68b2cb;
+  margin-top: 25px
+}
+/* PRESS TEMPLATE */
 
 /* ORBIT MASONARY GRID */
 
