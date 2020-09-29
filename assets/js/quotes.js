@@ -9,7 +9,6 @@ jQuery.fn.viking_quotes = function() {
 			var selectedLogo = jQuery($el).attr('href');
 			var quotePane = jQuery('.quotes-wrapper').find(selectedLogo);
 			jQuery(quotePane).addClass('active');
-			return jQuery(quotePane);
 		};
 
     // SHOWS QUOTE PANE BASED ON THE SELECTED LOGO
@@ -18,10 +17,7 @@ jQuery.fn.viking_quotes = function() {
 
       jQuery('.quotes-wrapper').find('.quote-pane.active').removeClass('active');
 
-			// SMOOTH SCROLL TO THE QUOTE SECTION
-			jQuery('html, body').stop().animate({
-				scrollTop: $el.getTarget().offset().top
-			}, 1000);
+			$el.getTarget();
 
 		});
 
