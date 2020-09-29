@@ -601,6 +601,7 @@
   max-width: 600px;
   margin: 0 auto;
 }
+#viking-quote-modal .modal-dialog{ top: 2% !important; max-width: 695px !important;}
 #newsletter-modal .modal-body > button.close,
 #viking-quote-modal .modal-body > button.close{
   font-weight: 400;
@@ -1024,8 +1025,8 @@
       width: 148px;
       height: 122px;
    }
-   #newsletter-modal .modal-dialog,
-   #viking-quote-modal .modal-dialog{top: 15% !important;}
+   #newsletter-modal .modal-dialog{top: 15% !important;}
+   #viking-quote-modal .modal-dialog{ top: 2% !important; }
  }
   /* VIKING SCROLLING LIST SOW */
 @media(max-width:600px){
