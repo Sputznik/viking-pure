@@ -55,5 +55,22 @@ add_filter( 'orbit_meta_box_vars', function( $meta_box ){
 		)
 	);
 
+	$meta_box['press'] = array(
+		array(
+			'id'			=> 'press-meta-field',
+			'title'		=> 'Additional Information',
+			'fields'	=> array(
+				'btn_text' => array(
+					'type' => 'text',
+					'text' => 'Button Text'
+				),
+				'btn_url' => array(
+					'type' => 'text',
+					'text' => 'Button URL'
+				),
+			)
+		)
+	);
+
 	return $meta_box;
 });
