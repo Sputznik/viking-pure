@@ -11,7 +11,11 @@ add_filter( 'orbit_meta_box_vars', function( $meta_box ){
 				'video_url'	=> array(
 					'type' => 'text',
 					'text' => 'Youtube Video URL'
-				)
+				),
+				'external_url'	=> array(
+					'type' => 'text',
+					'text' => 'External Video URL'
+				),
 			)
 		)
 	);
