@@ -4,7 +4,7 @@ $.fn.single_filters = function(){
     var $el 					= $( this ),
         $filters      = $('.filters'),
 			  $target 			= $('.articles-masonary'),
-			  html 					= $target.html();
+			  html 					= $target.innerHTML;
 
 
     /* GET ACTIVE FILTERS  */
