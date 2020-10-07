@@ -73,4 +73,4 @@ $.fn.single_filters = function(){
 
 }
 
-$("document").ready(function() { $('[data-filter~=primary]').single_filters(); });
+$(document).ready(function() { $('[data-filter~=primary]').single_filters(); });
