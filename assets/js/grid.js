@@ -1,7 +1,7 @@
 // MASONARY GRID SCRIPT
-$(document).ready(function(){
+jQuery(document).ready(function(){
 
-  $('.articles-masonary').masonry({
+  jQuery('.articles-masonary').masonry({
     itemSelector: '.orbit-article',
     gutter: '.gutter-sizer',
     columnWidth: '.grid-sizer',
@@ -11,24 +11,24 @@ $(document).ready(function(){
 
   // BACK TO TOP BUTTON
   // Find the bottom offset of the sidebar widget
-  var sidebar   = $('.tabs-wrapper');
+  var sidebar   = jQuery('.tabs-wrapper');
   var bottom;
 
   if( sidebar.length > 0 ) { bottom = sidebar.offset().top + sidebar.height(); }
 
-  $(window).scroll(function () {
+  jQuery(window).scroll(function () {
     if( bottom != 'undefined' ){
-      if ($(this).scrollTop() > bottom  ) {
-        $('#back-top').fadeIn();
+      if (jQuery(this).scrollTop() > bottom  ) {
+        jQuery('#back-top').fadeIn();
         } else {
-        $('#back-top').fadeOut();
+        jQuery('#back-top').fadeOut();
       }
     }
   });
 
-  $('#back-top').click(function () {
-    var position = $('.viking-sidebar').offset().top;
-    $("html, body").animate({
+  jQuery('#back-top').click(function () {
+    var position = jQuery('.viking-sidebar').offset().top;
+    jQuery("html, body").animate({
       scrollTop: position - 150
     }, 600);
     return false;

@@ -1,9 +1,9 @@
-$.fn.single_filters = function(){
+jQuery.fn.single_filters = function(){
 
   return this.each(function(){
-    var $el 					= $( this ),
-        $filters      = $('.filters'),
-			  $target 			= $('.articles-masonary'),
+    var $el 					= jQuery( this ),
+        $filters      = jQuery('.filters'),
+			  $target 			= jQuery('.articles-masonary'),
 			  html 					= $target.html();
 
 
@@ -16,7 +16,7 @@ $.fn.single_filters = function(){
 
       $active_filter.each(function( index, selectedFilter ){
 
-        var tax = $(selectedFilter).data('tax');
+        var tax = jQuery(selectedFilter).data('tax');
 
         if( tax != undefined  ){ selector.push(tax); }
 
@@ -41,7 +41,7 @@ $.fn.single_filters = function(){
       /* ITERATE THROUGH ALL THE POSTS */
 			$target.find("[data-post_type]").filter( function( i,item ){
 
-				var $item = $(this);
+				var $item = jQuery(this);
 
 				for (var i = 0; i < postFilters.length; i++) {
 
@@ -59,7 +59,7 @@ $.fn.single_filters = function(){
 
       //UPDATES MASONARY UI
       setTimeout(function() {
-         var $container = $('.articles-masonary');
+         var $container = jQuery('.articles-masonary');
          $container.masonry('reloadItems');
          $container.masonry();
       },0);
@@ -73,4 +73,4 @@ $.fn.single_filters = function(){
 
 }
 
-$(document).ready(function() { $('[data-filter~=primary]').single_filters(); });
+jQuery(document).ready(function() { jQuery('[data-filter~=primary]').single_filters(); });

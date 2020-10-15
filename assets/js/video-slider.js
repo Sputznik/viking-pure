@@ -1,10 +1,10 @@
 
-$(document).ready(function(){
+jQuery(document).ready(function(){
 
 
-	$('[data-behaviour~=videos-slick]').each( function(){
+	jQuery('[data-behaviour~=videos-slick]').each( function(){
 
-		var $el = $( this );
+		var $el = jQuery( this );
 
 		$el.slick({
 			slidesToShow		: $el.data('items'),
@@ -31,6 +31,6 @@ $(document).ready(function(){
 		});
 
 	});
-	$(".slider").slick("refresh");
+	jQuery(".slider").slick("refresh");
 
 });
