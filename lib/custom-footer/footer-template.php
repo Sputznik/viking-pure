@@ -28,7 +28,7 @@
 <div class="footer-section-two">
 	<div class="site-logo">
 		<a href="<?php _e( get_bloginfo('url') );?>">
-	  	<img class="left-logo" src="<?php _e( "$img_path/viking-pure-logo-white.svg" );?>">
+	  	<img class="left-logo" src="<?php _e( "$img_path/site-logo.png" );?>">
 		</a>
 	</div>
 	<p class="contact">
