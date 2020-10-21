@@ -572,7 +572,6 @@
   grid-template-columns: 1fr 2fr;
   padding-left: 20px;
   padding-right: 20px;
-  border: 2px solid red;
 }
 .footer-section-two .contact{
   font-size: 16px;
@@ -580,11 +579,6 @@
  }
  .footer-section-two .logos,
  .footer-section-two .contact{ align-self: start}
- .footer-section-two .site-logo,
- .footer-section-two .logos,
- .footer-section-two .contact{
-   border: 2px solid green;
- }
 /* .footer-section-two .logos{margin-top: 15px;} */
 .footer-section-two .logos a{ display: inline-block;}
 .footer-section-two .logos a:hover,
