@@ -572,13 +572,20 @@
   grid-template-columns: 1fr 2fr;
   padding-left: 20px;
   padding-right: 20px;
+  border: 2px solid red;
 }
 .footer-section-two .contact{
   font-size: 16px;
-  margin-top: 15px;
   color: #ffffff;
  }
-.footer-section-two .logos{margin-top: 15px;}
+ .footer-section-two .logos,
+ .footer-section-two .contact{ align-self: start}
+ .footer-section-two .site-logo,
+ .footer-section-two .logos,
+ .footer-section-two .contact{
+   border: 2px solid green;
+ }
+/* .footer-section-two .logos{margin-top: 15px;} */
 .footer-section-two .logos a{ display: inline-block;}
 .footer-section-two .logos a:hover,
 .footer-section-two .site-logo a{text-decoration: none;}
@@ -1213,9 +1220,10 @@
     margin: 0 auto;
     grid-template-columns: 2fr 2fr 1fr;
     /*justify-items: center;*/
+    align-items: center;
   }
   .footer-section-two .left-logo{
-    max-width: 65px;
+    max-width: 240px;
     width: 100%;
   }
 }
@@ -1227,12 +1235,12 @@
 
 @media(max-width: 700px){
   .footer-section-two .left-logo{
-    max-width: 60px;
-    margin-bottom: 20px;
+    max-width: 180px;
+    /* margin-bottom: 20px; */
   }
   .footer-section-two .contact{
     font-size: 14px !important;
-    margin-top: 10px;
+    /* margin-top: 10px; */
    }
 }
 @media(max-width: 520px){
@@ -1252,11 +1260,11 @@
     grid-row-gap: 20px;
   }
   .footer-section-two .left-logo{
-    max-width: 50px;
-    margin-bottom: 0;
+    /* max-width: 50px;
+    margin-bottom: 0; */
   }
   .footer-section-two .logos,
-  .footer-section-two .contact{ margin: 0;}
+  .footer-section-two .contact{ margin-top: 10px; margin-bottom: 0; }
 
    /* VIKING CAROUSEL SOW */
    .carousel-control.left{left: 0;}
