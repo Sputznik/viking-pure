@@ -31,10 +31,13 @@
 	  	<img class="left-logo" src="<?php _e( "$img_path/viking-logo.png" );?>">
 		</a>
 	</div>
-	<p class="contact">
-    4400 Eastport Park Way, Port Orange, FL 32127
-    +1 (386) 428-9800
-  </p>
+	<div class="contact">
+		<p>
+			4400 Eastport Park Way, Port Orange, FL 32127
+			+1 (386) 428-9800
+		</p>
+		<?php get_template_part( 'partials/social', 'media' );?>
+	</div>
   <div class="logos">
 		<a href="https://greenseal.org/">
     	<img src="<?php _e( "$img_path/green-seal-certified-white.svg" );?>">

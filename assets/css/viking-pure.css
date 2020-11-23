@@ -578,13 +578,18 @@
   color: #ffffff;
  }
  .footer-section-two .logos,
- .footer-section-two .contact{ align-self: start}
+ .footer-section-two .contact,
+ .footer-section-two .site-logo{ align-self: start}
 /* .footer-section-two .logos{margin-top: 15px;} */
 .footer-section-two .logos a{ display: inline-block;}
 .footer-section-two .logos a:hover,
 .footer-section-two .site-logo a{text-decoration: none;}
 .footer-section-two .logos a:focus,
 .footer-section-two .site-logo a{ outline: none;}
+.footer-section-two .contact .social-icons{ margin: 30px 0px 0px;  }
+.footer-section-two .contact .social-icons li{ display: inline-block; margin-right: 20px;}
+.footer-section-two .contact .social-icons li:last-child{ margin-right: 0;}
+.footer-section-two .contact .social-icons .fa{ font-size: 24px;}
 /* VIKING FOOTER */
 /* BACK TO TOP BUTTON VIKING SIDEBAR*/
 #back-top {
