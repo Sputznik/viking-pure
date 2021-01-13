@@ -1,3 +1,6 @@
+<div class="container-fluid header-white-bg">
+  <h6>Viking Pure Disinfectant added to EPA's "List-N" Products Approved to Kill COVID-19.</h6>
+</div>
 <div class="container-fluid header-blue-bg">
   <a href="#newsletter-modal" data-toggle="modal" class="newsletter-btn">
     <h6>SIGN UP FOR OUR NEWSLETTER <span><img src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/header-arrow.png" /></span> </h6>

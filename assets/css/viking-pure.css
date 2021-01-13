@@ -165,7 +165,8 @@
 /* NEWSLETTER HEADER BLUE STRIP */
 .header-blue-bg{ background-color: #68b2cb; height: 45px; }
 .header-blue-bg > .newsletter-btn{ display: block; text-decoration: none; }
-.header-blue-bg > .newsletter-btn h6{
+.header-blue-bg > .newsletter-btn h6,
+.header-white-bg h6{
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -176,6 +177,10 @@
 }
 .newsletter-btn img{ width:100%; max-width: 45px; vertical-align: middle; margin-bottom: 3px; }
 /* NEWSLETTER HEADER BLUE STRIP */
+
+/* HEADER WHITE STRIP */
+.header-white-bg h6{ color: #68b2cb; }
+
 
 
 /* Ovverride default BS3 styles */
@@ -1107,6 +1112,12 @@
    #newsletter-modal .modal-dialog{top: 15% !important;}
    #viking-quote-modal .modal-dialog{ top: 2% !important; }
  }
+
+ @media(max-width: 680px){
+   .header-white-bg{ padding: 10px 15px; }
+   .header-white-bg h6{ line-height: 1.6; }
+ }
+
   /* VIKING SCROLLING LIST SOW */
 @media(max-width:600px){
   .header-right-wrapper.navbar-nav {
