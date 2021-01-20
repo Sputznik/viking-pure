@@ -16,7 +16,7 @@
           <li class="<?php _e( $tab_class );?>">
             <a href="<?php _e( $item['tab_url'] );?>">
               <div class="item">
-                <img src="<?php _e( wp_get_attachment_url( $item['image'] ) );?>" />
+                <img src="<?php _e( wp_get_attachment_url( $item['image'] ) );?>" alt="List Icon" />
                 <span><?php _e( $item['tab_title'] );?></span>
               </div>
             </a>

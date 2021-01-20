@@ -27,7 +27,7 @@
           <?php foreach( $instance['bullet_items'] as $item ):?>
             <li>
               <div class="item">
-                <img src="<?php _e( wp_get_attachment_url( $item['bullet_image'] ) );?>" />
+                <img src="<?php _e( wp_get_attachment_url( $item['bullet_image'] ) );?>" alt="List Icon" />
                 <span><?php _e( $item['bullet_title'] );?></span>
               </div>
             </li>

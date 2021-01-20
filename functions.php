@@ -65,12 +65,12 @@ function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' )
 		<?php endif; ?>
 		<li>
 			<a href="https://greenseal.org/">
-				<img class="logo-one" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$green_seal;?>" />
+				<img class="logo-one" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$green_seal;?>" alt="Green Seal"/>
 			</a>
 		</li>
 		<li>
 			<a href="https://www.woolsafe.org/">
-				<img class="logo-two" src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/woolsafe-approved.svg" />
+				<img class="logo-two" src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/woolsafe-approved.svg" alt="Wool Safe"/>
 			</a>
 		</li>
 	</ul>
