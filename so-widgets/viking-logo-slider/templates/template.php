@@ -14,7 +14,7 @@
 			<?php foreach( $instance['slides'] as $slide ):?>
 				<a href="#logo-<?php echo getUniqueID( $slide ); ?>" data-behaviour="viking-quote">
 					<div class="slide">
-						<img src="<?php _e( wp_get_attachment_url( $slide['image'] ) );?>" />
+						<img src="<?php _e( wp_get_attachment_url( $slide['image'] ) );?>" alt="Slider Image" />
 					</div>
 				</a>
 			<?php endforeach;?>

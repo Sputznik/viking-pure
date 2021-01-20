@@ -33,13 +33,13 @@
   <!-- Controls -->
   <a class="left carousel-control" data-target="#carousel-example-generic" role="button" data-slide="prev">
     <span>
-      <img src="<?php _e($arrow.'left-arrow.svg')?>" />
+      <img src="<?php _e($arrow.'left-arrow.svg')?>" alt="Left Arrow" />
     </span>
     <span class="sr-only">Previous</span>
   </a>
   <a class="right carousel-control" data-target="#carousel-example-generic" role="button" data-slide="next">
     <span>
-      <img src="<?php _e($arrow.'right-arrow.svg')?>" />
+      <img src="<?php _e($arrow.'right-arrow.svg')?>" alt="Right Arrow" />
     </span>
     <span class="sr-only">Next</span>
   </a>
