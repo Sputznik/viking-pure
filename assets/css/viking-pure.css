@@ -681,6 +681,7 @@
 .viking-grid-3 .post-item{
   background: #ffffff;
   min-height: 200px;
+  position: relative;
 }
 .viking-grid-3 .featured-img{
   min-height: 200px;
@@ -691,18 +692,19 @@
   background-repeat: no-repeat;
 }
 .viking-grid-3 .img-link{ position: absolute; width: 100%; height: 100%; }
-.viking-grid-3 .post-desc{ padding:20px; position: relative; }
+.viking-grid-3 .post-desc{ padding:20px;}
 .viking-grid-3 .post-desc > h3{ margin-top: 0; margin-bottom: 30px; font-weight: bold; }
-.viking-grid-3 .post-desc a{
+.viking-grid-3 .post-desc a,
+.viking-grid-3 .post-item a.read-more{
   text-decoration: none;
   -o-transition: color .3s;
 	-ms-transition: color .3s;
 	-moz-transition: color .3s;
 	-webkit-transition: color .3s;
 }
-.viking-grid-3 .post-desc a.read-more{
+.viking-grid-3 .post-item a.read-more{
   display: inline-block;
-  margin-top: 20px;
+  margin: 20px 20px 0;
   border-bottom: #999999 solid 1px;
 }
 
@@ -917,9 +919,10 @@
   /* VIKING SCROLLING LIST SOW */
 
   /* VIKING GRID 3 */
-  .viking-grid-3 .post-desc a:hover{ color: #68b2cb; }
+  .viking-grid-3 .post-desc a:hover,
+  .viking-grid-3 .post-item a.read-more:hover{ color: #68b2cb; }
   .viking-grid-3 .post-desc{ min-height: 200px; }
-  .viking-grid-3 .post-desc a.read-more{
+  .viking-grid-3 .post-item a.read-more{
     display: inline-block;
     position: absolute;
     bottom: 20px;

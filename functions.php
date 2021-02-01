@@ -93,3 +93,8 @@ add_filter( 'sp_prefooter_class', function(){ return 'container-fluid viking-foo
 function getUniqueID( $data ){
 	return substr( md5( json_encode( $data ) ), 0, 8 );
 }
+
+/* EXCERPT MORE */
+add_filter( 'excerpt_more', function( $more ){
+	return '&hellip;';
+});
