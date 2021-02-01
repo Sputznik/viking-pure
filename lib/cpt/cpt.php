@@ -55,7 +55,7 @@ add_filter( 'orbit_post_type_vars', function( $orbit_types ){
 		),
 		'menu_icon'	=> 'dashicons-edit-page',
 		'public'		=> true,
-		'supports'	=> array( 'title', 'editor', 'thumbnail' )
+		'supports'	=> array( 'title', 'excerpt', 'thumbnail' )
 	);
 
 	return $orbit_types;
