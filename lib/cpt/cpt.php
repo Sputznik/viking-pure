@@ -47,5 +47,16 @@ add_filter( 'orbit_post_type_vars', function( $orbit_types ){
 		'supports'	=> array( 'title', 'editor','thumbnail' )
 	);
 
+	$orbit_types['articles'] = array(
+		'slug' 		=> 'articles',
+		'labels'	=> array(
+			'name' 					=> 'Articles',
+			'singular_name' => 'Article',
+		),
+		'menu_icon'	=> 'dashicons-edit-page',
+		'public'		=> true,
+		'supports'	=> array( 'title', 'thumbnail' )
+	);
+
 	return $orbit_types;
 } );
