@@ -16,7 +16,7 @@
 		<section data-behaviour="videos-slick" data-items="<?php _e( $instance['show_slides'] );?>" class="slider">
 			<?php foreach( $instance['slides'] as $slide ):?>
 			<div class="slide">
-				<?php $youtube->create_video_thumb( $slide['video_url'] );?>
+				<?php $youtube->create_video_thumb( $slide['video_url'], $slide['video_title'] );?>
 				<h5><?php _e($slide['video_title']);?></h5>
 				<p><?php _e($slide['video_desc']);?></p>
 			</div>
