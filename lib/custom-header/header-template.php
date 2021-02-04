@@ -1,5 +1,9 @@
 <div class="container-fluid header-white-bg">
-  <h6>Viking Pure Disinfectant added to EPA's "List-N" Products Approved to Kill COVID-19. EPA #87542-1.</h6>
+  <h6>
+    <a href="https://vikingpure.com/wp-content/uploads/2020/11/VikingPure__EPA_LISTN__PressRelease.pdf" target="_blank" rel="noreferrer noopener" aria-label="This link opens in a new tab.">
+      Viking Pure Disinfectant added to EPA's "List-N" Products Approved to Kill COVID-19. EPA #87542-1.
+    </a>
+  </h6>
 </div>
 <div class="container-fluid header-blue-bg">
   <a href="#newsletter-modal" data-toggle="modal" class="newsletter-btn">
