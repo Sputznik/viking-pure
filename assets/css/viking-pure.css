@@ -747,6 +747,32 @@
   outline: none;
 }
 
+/* ARCHIVE RESOURCES */
+.archive .archive-articles-wrapper{ background-color: #f3f4f5; }
+.archive .archive-articles-wrapper .title{ padding-top: 50px; }
+.archive .archive-articles-wrapper .title h2 {
+  margin: 0;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+.archive-articles-wrapper .archive-content { padding: 50px 15px; }
+
+/* PAGINATION */
+.search-pagination .page-numbers.current,
+.search-pagination a.page-numbers:hover,
+ul.page-numbers li a:hover,
+ul.page-numbers li span.current{
+  background: #68b2cb;
+  border: 1px solid #68b2cb;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* PAGINATION */
+
+/* ARCHIVE RESOURCES */
+
 
 /* VIDEO SLIDER SOW */
 @media(max-width:1300px){
