@@ -718,6 +718,7 @@
   background-repeat: no-repeat;
 }
 .single-article .post-meta > h1.title{
+  text-align: left !important;
   font-size: 40px !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
@@ -725,7 +726,7 @@
   margin: 0;
   margin-bottom: 16px;
 }
-.single-article .post-meta .post-date { color: rgba(0,0,0,0.6); }
+.single-article .post-meta .post-date { color: rgba(0,0,0,0.6); font-size: 16px; }
 .single-article .post-content img{ width: 100%; }
 .single-article .post-content.narrow-col{ max-width:750px; margin: 16px auto 50px; }
 
