@@ -76,18 +76,5 @@ add_filter( 'orbit_meta_box_vars', function( $meta_box ){
 		)
 	);
 
-	$meta_box['articles'] = array(
-		array(
-			'id'			=> 'article-meta-field',
-			'title'		=> 'Additional Information',
-			'fields'	=> array(
-				'linkedin_url'	=> array(
-					'type' => 'text',
-					'text' => 'Linkedin URL'
-				)
-			)
-		)
-	);
-
 	return $meta_box;
 });
