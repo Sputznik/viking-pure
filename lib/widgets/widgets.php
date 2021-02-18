@@ -32,4 +32,14 @@ add_action( 'widgets_init', function(){
     'after_title'   => '</h3>',
   ) );
 
+  register_sidebar( array(
+    'name'          => 'About Us Footer',
+    'id'            => 'viking-about-us-footer',
+    'description'   => 'Appears in the about us page after the pre-footer area',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h3 class="widget-title">',
+    'after_title'   => '</h3>',
+  ) );
+
 });

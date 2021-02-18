@@ -545,8 +545,12 @@
 /* VIKING FOOTER */
 .viking-footer-wrapper{
   padding: 0;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px;
+  background-color: #68b2cb; */
+}
+.viking-footer-wrapper-inner{
   background-color: #68b2cb;
+  padding-bottom: 50px;
 }
 .viking-footer{
   padding: 50px 0;

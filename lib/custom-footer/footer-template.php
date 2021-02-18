@@ -1,53 +1,60 @@
-<div class="viking-prefooter">
-	<div class="container">
-  	<?php if( is_active_sidebar( 'viking-prefooter' ) ){ dynamic_sidebar( 'viking-prefooter' );}?>
+<div class="viking-footer-wrapper-inner">
+	<div class="viking-prefooter">
+		<div class="container">
+	  	<?php if( is_active_sidebar( 'viking-prefooter' ) ){ dynamic_sidebar( 'viking-prefooter' );}?>
+		</div>
 	</div>
-</div>
-<?php $img_path = get_stylesheet_directory_uri().'/assets/logos';?>
-<div class="viking-footer">
-  <?php $menus = array(
-    'footer_one' => 'ABOUT US',
-    'footer_two'  =>  'PRODUCTS',
-    'footer_three'=> 'INDUSTRIES',
-    'footer_four' =>  'CUSTOMERS'
-  );?>
-  <?php foreach( $menus as $key => $title ):?>
-    <div class="footer-menus">
-      <h6><?php _e($title);?></h6>
-      <?php if ( has_nav_menu( $key ) ):
-            wp_nav_menu(
-              array(
-              'theme_location' => $key,
-              'menu_class' => 'list-unstyled'
-              )
-            );
-      endif;?>
-    </div>
-  <?php endforeach;?>
-</div>
-<div class="footer-section-two">
-	<div class="site-logo">
-		<a href="<?php _e( get_bloginfo('url') );?>">
-	  	<img class="left-logo" src="<?php _e( "$img_path/viking-logo.png" );?>" alt="Viking Pure" />
-		</a>
+	<?php $img_path = get_stylesheet_directory_uri().'/assets/logos';?>
+	<div class="viking-footer">
+	  <?php $menus = array(
+	    'footer_one' => 'ABOUT US',
+	    'footer_two'  =>  'PRODUCTS',
+	    'footer_three'=> 'INDUSTRIES',
+	    'footer_four' =>  'CUSTOMERS'
+	  );?>
+	  <?php foreach( $menus as $key => $title ):?>
+	    <div class="footer-menus">
+	      <h6><?php _e($title);?></h6>
+	      <?php if ( has_nav_menu( $key ) ):
+	            wp_nav_menu(
+	              array(
+	              'theme_location' => $key,
+	              'menu_class' => 'list-unstyled'
+	              )
+	            );
+	      endif;?>
+	    </div>
+	  <?php endforeach;?>
 	</div>
-	<div class="contact">
-		<p>
-			4400 Eastport Park Way, Port Orange, FL 32127
-			+1 (386) 428-9800
-		</p>
-		<?php get_template_part( 'partials/social', 'media' );?>
+	<div class="footer-section-two">
+		<div class="site-logo">
+			<a href="<?php _e( get_bloginfo('url') );?>">
+		  	<img class="left-logo" src="<?php _e( "$img_path/viking-logo.png" );?>" alt="Viking Pure" />
+			</a>
+		</div>
+		<div class="contact">
+			<p>
+				4400 Eastport Park Way, Port Orange, FL 32127
+				+1 (386) 428-9800
+			</p>
+			<?php get_template_part( 'partials/social', 'media' );?>
+		</div>
+	  <div class="logos">
+			<a href="https://greenseal.org/">
+	    	<img src="<?php _e( "$img_path/green-seal-certified-white.svg" );?>" alt="Green Seal" />
+			</a>
+			<a href="https://www.woolsafe.org/">
+	    	<img src="<?php _e( "$img_path/woolsafe-approved.svg" );?>" alt="Wool Safe" />
+			</a>
+	  </div>
 	</div>
-  <div class="logos">
-		<a href="https://greenseal.org/">
-    	<img src="<?php _e( "$img_path/green-seal-certified-white.svg" );?>" alt="Green Seal" />
-		</a>
-		<a href="https://www.woolsafe.org/">
-    	<img src="<?php _e( "$img_path/woolsafe-approved.svg" );?>" alt="Wool Safe" />
-		</a>
-  </div>
 </div>
 
+<?php if( is_active_sidebar( 'viking-about-us-footer' ) && is_page('about-us') ): ?>
+	<div class="about-us-footer">
+		<?php dynamic_sidebar( 'viking-about-us-footer' );?>
+	</div>
+<?php endif;?>
 
 <?php
 	$modals = array(
