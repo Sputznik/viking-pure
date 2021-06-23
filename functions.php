@@ -65,7 +65,7 @@ function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' )
 		<?php endif; ?>
 		<li>
 			<a href="https://greenseal.org/">
-				<img class="logo-one" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$green_seal;?>" alt="Green Sealp" style="max-width:52px;width:100%;" />
+				<img class="logo-one" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$green_seal;?>" alt="Green Seal" style="max-width:52px;width:100%;" />
 			</a>
 		</li>
 		<li>
