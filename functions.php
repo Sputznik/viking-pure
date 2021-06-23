@@ -55,8 +55,8 @@ add_filter('wp_nav_menu_items', function( $items, $args ){
 
 
 function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' ){
-  $green_seal = "green-seal-certified.svg";
-  if( $list_class == 'viking-logos-mobile' ){ $green_seal = "green-seal-certified-white.svg"; }
+  $green_seal = "green-seal-header.png";
+  if( $list_class == 'viking-logos-mobile' ){ $green_seal = "green-seal-footer.png"; }
   ob_start();
 	?>
 	<ul class='list-inline <?php echo $list_class; ?>'>
@@ -65,7 +65,7 @@ function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' )
 		<?php endif; ?>
 		<li>
 			<a href="https://greenseal.org/">
-				<img class="logo-one" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$green_seal;?>" alt="Green Seal"/>
+				<img class="logo-one" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$green_seal;?>" alt="Green Sealp" style="max-width:52px;width:100%;" />
 			</a>
 		</li>
 		<li>
