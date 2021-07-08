@@ -2,7 +2,7 @@
 
 /*ENQUEUE STYLES*/
 add_action('wp_enqueue_scripts',function(){
-  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.49' );
+  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), '1.0.50' );
   wp_enqueue_script( 'video-slider-js', get_stylesheet_directory_uri().'/assets/js/video-slider.js', array( 'jquery' ), '1.0.7', true );
   wp_enqueue_script( 'masonary-js', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js', array(), null, true );
   wp_enqueue_script( 'grid-js', get_stylesheet_directory_uri().'/assets/js/grid.js', array( 'jquery' ), '1.0.6', true );
@@ -56,7 +56,8 @@ add_filter('wp_nav_menu_items', function( $items, $args ){
 
 function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' ){
   $green_seal = "green-seal-header.png";
-  if( $list_class == 'viking-logos-mobile' ){ $green_seal = "green-seal-footer.png"; }
+  $issa_member = "issa-blue.png";
+  if( $list_class == 'viking-logos-mobile' ){ $green_seal = "green-seal-footer.png"; $issa_member = "issa-white.png"; }
   ob_start();
 	?>
 	<ul class='list-inline <?php echo $list_class; ?>'>
@@ -65,12 +66,17 @@ function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' )
 		<?php endif; ?>
 		<li>
 			<a href="https://greenseal.org/">
-				<img class="logo-one" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$green_seal;?>" alt="Green Seal" style="max-width:52px;width:100%;" />
+				<img class="logo-one" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$green_seal;?>" alt="Green Seal" />
 			</a>
 		</li>
 		<li>
 			<a href="https://www.woolsafe.org/">
 				<img class="logo-two" src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/woolsafe-approved.svg" alt="Wool Safe"/>
+			</a>
+		</li>
+    <li>
+			<a href="https://www.issa.com/">
+				<img class="logo-three" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$issa_member?>" alt="Issa Member"/>
 			</a>
 		</li>
 	</ul>

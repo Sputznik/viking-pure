@@ -365,9 +365,11 @@
 	top: 15px;
 }
 .viking-logos li{ padding: 0;}
-.viking-logos img{ width: 100%;}
-.viking-logos .logo-one{ max-width: 52px; margin-right: 10px;}
-.viking-logos .logo-two{ max-width: 48px; }
+.viking-logos img, .viking-logos-mobile img{ width: 100%;}
+.viking-logos .logo-one, .viking-logos-mobile .logo-one{ max-width: 52px; }
+.viking-logos .logo-one{ margin-right: 10px; }
+.viking-logos .logo-two{ max-width: 48px; margin-right: 10px; }
+.viking-logos .logo-three, .viking-logos-mobile .logo-three{ max-width: 54px; }
 .header5 .header-right{
   display: inline-block;
   padding: 12px 8px;
@@ -598,6 +600,9 @@
 .footer-section-two .contact .social-icons li{ display: inline-block; margin-right: 20px;}
 .footer-section-two .contact .social-icons li:last-child{ margin-right: 0;}
 .footer-section-two .contact .social-icons .fa{ font-size: 24px;}
+.footer-section-two .logos a:nth-child(1) img,
+.footer-section-two .logos a:nth-child(3) img{ max-width: 52px; width: 100%;}
+.footer-section-two .logos a:nth-child(3) img{ margin-left: 5px; }
 /* VIKING FOOTER */
 /* BACK TO TOP BUTTON VIKING SIDEBAR*/
 #back-top {
@@ -1105,6 +1110,8 @@ ul.page-numbers li span.current{
 /* MASONARY VIDEO */
 .articles-masonary .sp-youtube-frame {height: 200px !important;}
 /* MASONARY VIDEO */
+
+.footer-section-two .logos{ width: 165px; }
 
 }
 @media(max-width: 769px){
