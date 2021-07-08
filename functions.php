@@ -76,7 +76,7 @@ function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' )
 		</li>
     <li>
 			<a href="https://www.issa.com/">
-				<img class="logo-three" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$issa_member?>" alt="Issa Member"/>
+				<img class="logo-three" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$issa_member;?>" alt="Issa Member" />
 			</a>
 		</li>
 	</ul>
