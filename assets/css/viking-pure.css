@@ -603,6 +603,10 @@
 .footer-section-two .logos a:nth-child(1) img,
 .footer-section-two .logos a:nth-child(3) img{ max-width: 52px; width: 100%;}
 .footer-section-two .logos a:nth-child(3) img{ margin-left: 5px; }
+.viking-logos .logo-three, .viking-logos-mobile .logo-three,
+.footer-section-two .logos a:nth-child(3) img{
+  padding: 0 5px;
+}
 /* VIKING FOOTER */
 /* BACK TO TOP BUTTON VIKING SIDEBAR*/
 #back-top {
