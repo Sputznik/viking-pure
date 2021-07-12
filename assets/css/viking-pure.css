@@ -366,7 +366,7 @@
 }
 .viking-logos li{ padding: 0;}
 .viking-logos img, .viking-logos-mobile img{ width: 100%;}
-.viking-logos .logo-one, .viking-logos-mobile .logo-one{ max-width: 52px; }
+.viking-logos .logo-one, .viking-logos-mobile .logo-one{ max-width: 45px; }
 .viking-logos .logo-one{ margin-right: 10px; }
 .viking-logos .logo-two{ max-width: 48px; margin-right: 10px; }
 .viking-logos .logo-three, .viking-logos-mobile .logo-three{ max-width: 54px; }
@@ -600,13 +600,11 @@
 .footer-section-two .contact .social-icons li{ display: inline-block; margin-right: 20px;}
 .footer-section-two .contact .social-icons li:last-child{ margin-right: 0;}
 .footer-section-two .contact .social-icons .fa{ font-size: 24px;}
-.footer-section-two .logos a:nth-child(1) img,
+.footer-section-two .logos a:nth-child(1) img{ width: 100%; max-width: 45px; margin-right: 5px; }
 .footer-section-two .logos a:nth-child(3) img{ max-width: 52px; width: 100%;}
 .footer-section-two .logos a:nth-child(3) img{ margin-left: 5px; }
 .viking-logos .logo-three, .viking-logos-mobile .logo-three,
-.footer-section-two .logos a:nth-child(3) img{
-  padding: 0 5px;
-}
+.footer-section-two .logos a:nth-child(3) img{ padding: 0 5px; }
 /* VIKING FOOTER */
 /* BACK TO TOP BUTTON VIKING SIDEBAR*/
 #back-top {

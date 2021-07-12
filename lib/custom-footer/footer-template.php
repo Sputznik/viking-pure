@@ -41,7 +41,7 @@
 		</div>
 	  <div class="logos">
 			<a href="https://greenseal.org/">
-	    	<img src="<?php _e( "$img_path/green-seal-footer.png" );?>" alt="Green Seal" />
+	    	<img src="<?php _e( "$img_path/green-seal-white-footer.png" );?>" alt="Green Seal" />
 			</a>
 			<a href="https://www.woolsafe.org/">
 	    	<img src="<?php _e( "$img_path/woolsafe-approved.svg" );?>" alt="Wool Safe" />
