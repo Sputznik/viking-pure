@@ -221,6 +221,18 @@
 .navbar-default .navbar-brand {color: #ffffff;}
 /* Navbar brand */
 
+.header5 img.desktop-logo{
+	max-width: 250px;
+  margin-top: 8px;
+  margin-left: 20px;
+}
+
+.header5 img.visible-xs {
+  width: 250px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
 /* Navbar links */
 .navbar-default .navbar-nav > li > a {color: #6f7b8d; font-weight: bold; }
 .navbar-default .navbar-nav > li > a:hover,
@@ -295,7 +307,7 @@
   /* border: 1px solid red; */
   border-radius: 20px;
   background-color: transparent;
-  margin-right: 2px;
+  margin-right: 8px;
   /* display: block !important; */
   margin-left: 10px;
   /* margin-right: 14px; */
@@ -1127,59 +1139,6 @@ ul.page-numbers li span.current{
 }
 
 @media(max-width: 768px){
-  #bs-example-navbar-collapse-1{
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    background-color: #67B1CAF8;
-		margin-top: 10px;
-		height: 100%;
-  }
-
-	#bs-example-navbar-collapse-1 .btn-quote{
-		display: block;
-		width: 200px;
-		margin: 100px auto;
-		border-color: #fff;
-		background: transparent;
-
-	}
-
-  .navbar-default .navbar-nav > li > a:hover,
-  .navbar-default .navbar-nav > li > a:focus{
-    color: #ffffff;
-  }
-  .navbar-default .navbar-nav > li > a:focus{
-    outline: transparent;
-  }
-
-  /* Active link */
-  .navbar-default .navbar-nav > .active > a,
-  .navbar-default .navbar-nav > .active > a:hover,
-  .navbar-default .navbar-nav > .active > a:focus {
-    color: #ffffff;
-    background-color: #68b2cb;
-  }
-  /* Active link */
-  .navbar .dropdown-menu>li>a{ color: #6f7b8d;font-weight: bold !important; }
-  /* Navbar and nav-links */
-  .navbar-nav{
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: center;
-    padding-top: 120px;
-  }
-  .navbar-default .navbar-nav > li{margin-bottom: 20px;}
-  .navbar-default .navbar-nav > li.header-right-wrapper{margin-bottom: 0;}
-  .header5 .header-right{ padding:0; }
-  .header-right-wrapper.navbar-nav{ margin:0; padding-top: 100px; padding-bottom: 30px;}
-  .nav > li.viking-logos {display: none;}
-  .navbar-default .navbar-nav > li > a{
-    font-size: 24px;
-    font-weight: 100;
-    color: #fff;
-  }
-  /* Navbar and nav-links */
 
   /* Quote btn */
   .navbar-nav .pull-right{float: none !important;}

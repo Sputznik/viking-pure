@@ -1,0 +1,94 @@
+/* CHANGE NAVBAR COLLAPSE BREAKPOINT */
+@media (max-width: 1131px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+  }
+
+  .navbar-default .viking-logos{ display: none; }
+  .navbar-default .viking-logos-mobile{ display: block; }
+
+  /* NAVBAR MOBILE */
+  #bs-example-navbar-collapse-1{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: #67B1CAF8;
+		/* margin-top: 10px; */
+		height: 100%;
+  }
+
+	#bs-example-navbar-collapse-1 .btn-quote{
+		display: block;
+		width: 200px;
+		margin: 100px auto;
+		border-color: #ffffff;
+		background: transparent;
+	}
+
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus{
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav > li > a:focus{
+    outline: transparent;
+  }
+
+  /* Active link */
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #68b2cb;
+  }
+  /* Active link */
+  .navbar .dropdown-menu > li > a{ color: #6f7b8d;font-weight: bold !important; }
+  /* Navbar and nav-links */
+  .navbar-nav{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 120px;
+  }
+  .navbar-default .navbar-nav > li{ position: relative; display: block; margin-bottom: 20px; }
+  .navbar-default .navbar-nav > li.header-right-wrapper{margin-bottom: 0;}
+  .header5 .header-right{ padding:0; }
+  .header-right-wrapper.navbar-nav{ margin:0; padding-top: 100px; padding-bottom: 30px;}
+  .navbar-default .navbar-nav > li > a{
+    font-size: 24px;
+    font-weight: 100;
+    color: #fff;
+  }
+  /* Navbar and nav-links */
+
+}
