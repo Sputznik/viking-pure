@@ -23,7 +23,7 @@
   			</button>
         <?php do_action('sp_logo');?>
 			</div>
-  		<?php do_action('sp_nav_menu');?>
+  		<?php do_action('sp_nav_menu'); if( shortcode_exists( 'vp_odometer' ) ){ do_shortcode('vp_odometer');}?>
 			<?php echo getCertificationLogos();?>
     </div><!-- /.container-->
   </nav>
