@@ -10,7 +10,7 @@
     <div class="overlay"></div>
   </a>
 </div>
-<?php else: $youtube->create_video_thumb( $video_url, get_the_title( $post->ID ), '200px' ); endif;?>
+<?php else: $youtube->create_video_thumb( $video_url, get_the_title( $post->ID ), '200px', 'mqdefault' ); endif;?>
 <div class="video-meta">
   <h5 class="video-title"><?php the_title();?></h5>
   <div class="video-desc"><?php the_content();?></div>
