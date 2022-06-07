@@ -13,11 +13,19 @@ add_action('wp_enqueue_scripts',function(){
 },99);
 
 //Include Files
-include('lib/custom-header/header-functions.php');
-include('lib/custom-footer/footer-functions.php');
-include('lib/cpt/cpt.php');
-include('lib/custom-fields/custom-fields.php');
-include('lib/widgets/widgets.php');
+$inc_files = array(
+  'lib/cpt/cpt.php',
+  'lib/widgets/widgets.php',
+  'lib/custom-fields/custom-fields.php',
+  'lib/custom-header/header-functions.php',
+  'lib/custom-footer/footer-functions.php',
+  'lib/customize-theme/class-vkpt-customize.php'
+);
+
+foreach( $inc_files as $inc_file ){
+  require_once( $inc_file );
+}
+
 
 /* ADD SOW FROM THE THEME */
 add_action('siteorigin_widgets_widget_folders', function( $folders ){
@@ -56,6 +64,7 @@ add_filter('wp_nav_menu_items', function( $items, $args ){
 
 
 function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' ){
+  global $vkpt_customize;
   $green_seal = "green-seal-blue.png";
   $issa_member = "issa-blue.png";
   if( $list_class == 'viking-logos-mobile' ){ $green_seal = "green-seal-white-footer.png"; $issa_member = "issa-white.png"; }
@@ -66,17 +75,17 @@ function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' )
 		<li><?php echo getQuoteBtn();?></li>
 		<?php endif; ?>
 		<li>
-			<a href="https://certified.greenseal.org/company/viking-pure">
+			<a href="<?php _e( $vkpt_customize->get_certification_url('green_seal') ); ?>">
 				<img class="logo-one" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$green_seal;?>" alt="Green Seal" />
 			</a>
 		</li>
 		<li>
-			<a href="https://www.woolsafe.org/">
+			<a href="<?php _e( $vkpt_customize->get_certification_url('wool_safe') ); ?>">
 				<img class="logo-two" src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/woolsafe-approved.svg" alt="Wool Safe"/>
 			</a>
 		</li>
     <li>
-			<a href="https://www.issa.com/dir/company/514253">
+			<a href="<?php _e( $vkpt_customize->get_certification_url('issa_member') ); ?>">
 				<img class="logo-three" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$issa_member;?>" alt="Issa Member" />
 			</a>
 		</li>

@@ -1,3 +1,4 @@
+<?php global $vkpt_customize; ?>
 <div class="viking-footer-wrapper-inner">
 	<div class="viking-prefooter">
 		<div class="container">
@@ -40,13 +41,13 @@
 			<?php get_template_part( 'partials/social', 'media' );?>
 		</div>
 	  <div class="logos">
-			<a href="https://certified.greenseal.org/company/viking-pure">
+			<a href="<?php _e( $vkpt_customize->get_certification_url('green_seal') ); ?>">
 	    	<img src="<?php _e( "$img_path/green-seal-white-footer.png" );?>" alt="Green Seal" />
 			</a>
-			<a href="https://www.woolsafe.org/">
+			<a href="<?php _e( $vkpt_customize->get_certification_url('wool_safe') ); ?>">
 	    	<img src="<?php _e( "$img_path/woolsafe-approved.svg" );?>" alt="Wool Safe" />
 			</a>
-			<a href="https://www.issa.com/dir/company/514253">
+			<a href="<?php _e( $vkpt_customize->get_certification_url('issa_member') ); ?>">
 	    	<img src="<?php _e( "$img_path/issa-white.png" );?>" alt="Issa Member" />
 			</a>
 	  </div>
