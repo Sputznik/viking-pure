@@ -40,13 +40,13 @@
 			<?php get_template_part( 'partials/social', 'media' );?>
 		</div>
 	  <div class="logos">
-			<a href="https://greenseal.org/">
+			<a href="https://certified.greenseal.org/company/viking-pure">
 	    	<img src="<?php _e( "$img_path/green-seal-white-footer.png" );?>" alt="Green Seal" />
 			</a>
 			<a href="https://www.woolsafe.org/">
 	    	<img src="<?php _e( "$img_path/woolsafe-approved.svg" );?>" alt="Wool Safe" />
 			</a>
-			<a href="https://www.issa.com/">
+			<a href="https://www.issa.com/dir/company/514253">
 	    	<img src="<?php _e( "$img_path/issa-white.png" );?>" alt="Issa Member" />
 			</a>
 	  </div>

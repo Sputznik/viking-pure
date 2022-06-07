@@ -66,7 +66,7 @@ function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' )
 		<li><?php echo getQuoteBtn();?></li>
 		<?php endif; ?>
 		<li>
-			<a href="https://greenseal.org/">
+			<a href="https://certified.greenseal.org/company/viking-pure">
 				<img class="logo-one" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$green_seal;?>" alt="Green Seal" />
 			</a>
 		</li>
@@ -76,7 +76,7 @@ function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' )
 			</a>
 		</li>
     <li>
-			<a href="https://www.issa.com/">
+			<a href="https://www.issa.com/dir/company/514253">
 				<img class="logo-three" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$issa_member;?>" alt="Issa Member" />
 			</a>
 		</li>
