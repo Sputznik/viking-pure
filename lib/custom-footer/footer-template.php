@@ -41,15 +41,22 @@
 			<?php get_template_part( 'partials/social', 'media' );?>
 		</div>
 	  <div class="logos">
-			<a href="<?php _e( $vkpt_customize->get_certification_url('green_seal') ); ?>">
-	    	<img src="<?php _e( "$img_path/green-seal-white-footer.png" );?>" alt="Green Seal" />
-			</a>
-			<a href="<?php _e( $vkpt_customize->get_certification_url('wool_safe') ); ?>">
-	    	<img src="<?php _e( "$img_path/woolsafe-approved.svg" );?>" alt="Wool Safe" />
-			</a>
-			<a href="<?php _e( $vkpt_customize->get_certification_url('issa_member') ); ?>">
-	    	<img src="<?php _e( "$img_path/issa-white.png" );?>" alt="Issa Member" />
-			</a>
+			<div class="logos-section-one">
+				<a href="<?php _e( $vkpt_customize->get_certification_url('green_seal') ); ?>">
+		    	<img src="<?php _e( "$img_path/green-seal-white-footer.png" );?>" alt="Green Seal" />
+				</a>
+				<a href="<?php _e( $vkpt_customize->get_certification_url('wool_safe') ); ?>">
+		    	<img src="<?php _e( "$img_path/woolsafe-approved.svg" );?>" alt="Wool Safe" />
+				</a>
+				<a href="<?php _e( $vkpt_customize->get_certification_url('issa_member') ); ?>">
+		    	<img src="<?php _e( "$img_path/issa-white.png" );?>" alt="Issa Member" />
+				</a>
+			</div>
+			<div class="logos-section-two">
+				<a href="https://service.ariba.com/Discovery.aw/ad/profile?key=AN11114974506">
+		    	<img src="<?php _e( "$img_path/ariba-network.jpeg" );?>" alt="Ariba Network" />
+				</a>
+			</div>
 	  </div>
 	</div>
 </div>

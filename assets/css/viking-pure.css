@@ -617,6 +617,18 @@
 .footer-section-two .logos a:nth-child(3) img{ margin-left: 5px; }
 .viking-logos .logo-three, .viking-logos-mobile .logo-three,
 .footer-section-two .logos a:nth-child(3) img{ padding: 0 5px; }
+
+.footer-section-two .logos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-section-two .logos-section-two img {
+  max-width: 100px !important;
+  margin: 0 !important;
+}
+
 /* VIKING FOOTER */
 /* BACK TO TOP BUTTON VIKING SIDEBAR*/
 #back-top {
@@ -1343,6 +1355,9 @@ ul.page-numbers li span.current{
   .footer-section-two .left-logo{
     max-width: 240px;
     width: 100%;
+  }
+  .footer-section-two .logos-section-two {
+    text-align: center;
   }
 }
 
