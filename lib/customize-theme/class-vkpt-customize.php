@@ -24,6 +24,9 @@ class VIKING_THEME_CUSTOMIZE {
       ),
       'issa_member' => array(
         'label'	=> 'Issa Member URL'
+      ),
+      'omri_listed' => array(
+        'label'	=> 'Omri Listed URL'
       )
     );
   }

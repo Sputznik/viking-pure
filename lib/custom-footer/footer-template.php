@@ -42,14 +42,17 @@
 		</div>
 	  <div class="logos">
 			<div class="logos-section-one">
-				<a href="<?php _e( $vkpt_customize->get_certification_url('green_seal') ); ?>">
+				<a href="<?php _e( $vkpt_customize->get_certification_url('green_seal') ); ?>" target="_blank">
 		    	<img src="<?php _e( "$img_path/green-seal-white-footer.png" );?>" alt="Green Seal" />
 				</a>
-				<a href="<?php _e( $vkpt_customize->get_certification_url('wool_safe') ); ?>">
+				<a href="<?php _e( $vkpt_customize->get_certification_url('wool_safe') ); ?>" target="_blank">
 		    	<img src="<?php _e( "$img_path/woolsafe-approved.svg" );?>" alt="Wool Safe" />
 				</a>
-				<a href="<?php _e( $vkpt_customize->get_certification_url('issa_member') ); ?>">
+				<a href="<?php _e( $vkpt_customize->get_certification_url('issa_member') ); ?>" target="_blank">
 		    	<img src="<?php _e( "$img_path/issa-white.png" );?>" alt="Issa Member" />
+				</a>
+				<a href="<?php _e( $vkpt_customize->get_certification_url('omri_listed') ); ?>" target="_blank">
+		    	<img src="<?php _e( "$img_path/omri-listed-white.png" );?>" alt="Omri Listed" />
 				</a>
 			</div>
 			<div class="logos-section-two">

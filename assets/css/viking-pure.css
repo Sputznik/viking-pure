@@ -382,6 +382,9 @@
 .viking-logos .logo-one{ margin-right: 10px; }
 .viking-logos .logo-two{ max-width: 48px; margin-right: 10px; }
 .viking-logos .logo-three, .viking-logos-mobile .logo-three{ max-width: 54px; }
+.viking-logos .logo-four, .viking-logos-mobile .logo-four{
+  max-width: 72px;
+}
 .header5 .header-right{
   display: inline-block;
   padding: 12px 8px;
@@ -591,7 +594,7 @@
 .footer-section-two{
   display: grid;
   grid-column-gap: 40px;
-  grid-template-columns: 1fr 2fr;
+  grid-row-gap: 20px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -615,7 +618,11 @@
 .footer-section-two .logos a:nth-child(1) img{ width: 100%; max-width: 45px; margin-right: 5px; }
 .footer-section-two .logos a:nth-child(3) img{ max-width: 52px; width: 100%;}
 .footer-section-two .logos a:nth-child(3) img{ margin-left: 5px; }
-.viking-logos .logo-three, .viking-logos-mobile .logo-three,
+.footer-section-two .logos a:nth-child(4) img { max-width: 62px; margin-left: 5px; }
+.viking-logos .logo-three,
+.viking-logos-mobile .logo-three,
+.viking-logos .logo-four,
+.viking-logos-mobile .logo-four,
 .footer-section-two .logos a:nth-child(3) img{ padding: 0 5px; }
 
 .footer-section-two .logos {
@@ -1036,6 +1043,13 @@ ul.page-numbers li span.current{
     grid-template-columns: repeat(2,1fr);
     grid-gap: 20px;
   }
+  .footer-section-two {
+    padding: 0;
+    max-width: 940px;
+    margin: 0 auto;
+    grid-template-columns: 2fr 2fr 2fr;
+    align-items: center;
+  }
 }
 
 @media( min-width: 992px ) {
@@ -1137,7 +1151,9 @@ ul.page-numbers li span.current{
 .articles-masonary .sp-youtube-frame {height: 200px !important;}
 /* MASONARY VIDEO */
 
-.footer-section-two .logos{ width: 165px; }
+.footer-section-two {
+  grid-template-columns: 2fr 2fr;
+}
 
 }
 @media(max-width: 769px){
@@ -1344,20 +1360,9 @@ ul.page-numbers li span.current{
     max-width: 940px;
     margin: 0 auto;
   }
-  .footer-section-two{
-    padding: 0;
-    max-width: 940px;
-    margin: 0 auto;
-    grid-template-columns: 2fr 2fr 1fr;
-    /*justify-items: center;*/
-    align-items: center;
-  }
   .footer-section-two .left-logo{
     max-width: 240px;
     width: 100%;
-  }
-  .footer-section-two .logos-section-two {
-    text-align: center;
   }
 }
 
@@ -1421,4 +1426,8 @@ ul.page-numbers li span.current{
 .viking-logos-mobile{ margin-bottom: 50px; }
 @media( min-width: 769px ){
 	.viking-logos-mobile{ display: none; }
+  .footer-section-two .logos-section-one,
+  .footer-section-two .logos-section-two {
+    text-align: center;
+  }
 }

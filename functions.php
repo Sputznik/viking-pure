@@ -67,7 +67,12 @@ function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' )
   global $vkpt_customize;
   $green_seal = "green-seal-blue.png";
   $issa_member = "issa-blue.png";
-  if( $list_class == 'viking-logos-mobile' ){ $green_seal = "green-seal-white-footer.png"; $issa_member = "issa-white.png"; }
+  $omri_listed = "omri-listed.png";
+  if( $list_class == 'viking-logos-mobile' ){
+    $green_seal = "green-seal-white-footer.png";
+    $issa_member = "issa-white.png";
+    $omri_listed = "omri-listed-white.png";
+  }
   ob_start();
 	?>
 	<ul class='list-inline <?php echo $list_class; ?>'>
@@ -75,18 +80,23 @@ function getCertificationLogos( $quoteBtn = true, $list_class = 'viking-logos' )
 		<li><?php echo getQuoteBtn();?></li>
 		<?php endif; ?>
 		<li>
-			<a href="<?php _e( $vkpt_customize->get_certification_url('green_seal') ); ?>">
+			<a href="<?php _e( $vkpt_customize->get_certification_url('green_seal') ); ?>" target="_blank">
 				<img class="logo-one" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$green_seal;?>" alt="Green Seal" />
 			</a>
 		</li>
 		<li>
-			<a href="<?php _e( $vkpt_customize->get_certification_url('wool_safe') ); ?>">
+			<a href="<?php _e( $vkpt_customize->get_certification_url('wool_safe') ); ?>" target="_blank">
 				<img class="logo-two" src="<?php echo get_stylesheet_directory_uri();?>/assets/logos/woolsafe-approved.svg" alt="Wool Safe"/>
 			</a>
 		</li>
     <li>
-			<a href="<?php _e( $vkpt_customize->get_certification_url('issa_member') ); ?>">
+			<a href="<?php _e( $vkpt_customize->get_certification_url('issa_member') ); ?>" target="_blank">
 				<img class="logo-three" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$issa_member;?>" alt="Issa Member" />
+			</a>
+		</li>
+    <li>
+			<a href="<?php _e( $vkpt_customize->get_certification_url('omri_listed') ); ?>" target="_blank">
+				<img class="logo-four" src="<?php echo get_stylesheet_directory_uri().'/assets/logos/'.$omri_listed;?>" alt="Omri Listed" />
 			</a>
 		</li>
 	</ul>
