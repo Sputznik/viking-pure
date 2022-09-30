@@ -11,5 +11,7 @@
     <h5 class="title"><?php the_title();?></h5>
     <div class="desc"><?php the_excerpt();?></div>
   </div>
-  <a class="btn btn-learn-more" href="<?php _e( $btn_url );?>" target="_blank">LEARN MORE</a>
+  <?php if( $btn_url ): ?>
+    <a class="btn btn-learn-more" href="<?php _e( $btn_url );?>" target="_blank">LEARN MORE</a>
+  <?php endif; ?>
 </div>

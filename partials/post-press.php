@@ -6,5 +6,7 @@
   <div class="press-release-meta">
     <div class="desc"><?php the_excerpt();?></div>
   </div>
-  <a class="btn btn-learn-more" href="<?php _e( $btn_url );?>" target="_blank"><?php _e( $btn_text );?></a>
+  <?php if( $btn_text ): ?>
+    <a class="btn btn-learn-more" href="<?php _e( $btn_url );?>" target="_blank"><?php _e( $btn_text );?></a>
+  <?php endif; ?>
 </div>
