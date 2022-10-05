@@ -28,11 +28,11 @@
     </li>
   <?php endif;?>
 
-  <?php if( $post_type === 'press'):?>
-    <li class="orbit-article" data-post_type="press" data-id="<?php _e( $post_id );?>" >
-      <?php get_template_part( "partials/post", "press" );?>
-    </li>
-  <?php endif;?>
+  <?php //if( $post_type === 'press'):?>
+    <!-- <li class="orbit-article" data-post_type="press" data-id="<?php //_e( $post_id );?>" >
+      <?php //get_template_part( "partials/post", "press" );?>
+    </li> -->
+  <?php //endif;?>
 
   <?php endwhile;?>
 </ul>
