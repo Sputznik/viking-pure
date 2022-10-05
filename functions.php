@@ -1,14 +1,19 @@
 <?php
 
+/*  CONSTANTS */
+if( !defined( 'VIKING_VERSION' ) ) {
+  define( 'VIKING_VERSION', '2.0.0' );
+}
+
 /*ENQUEUE STYLES*/
 add_action('wp_enqueue_scripts',function(){
-  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), time() ); //'1.0.52'
-  wp_enqueue_style('navbar-css', get_stylesheet_directory_uri().'/assets/css/navbar.css', array('sp-core-style','viking-pure-css'), time() );
-  wp_enqueue_script( 'video-slider-js', get_stylesheet_directory_uri().'/assets/js/video-slider.js', array( 'jquery' ), '1.0.7', true );
+  wp_enqueue_style('viking-pure-css', get_stylesheet_directory_uri().'/assets/css/viking-pure.css', array('sp-core-style'), VIKING_VERSION );
+  wp_enqueue_style('navbar-css', get_stylesheet_directory_uri().'/assets/css/navbar.css', array('sp-core-style','viking-pure-css'), VIKING_VERSION );
+  wp_enqueue_script( 'video-slider-js', get_stylesheet_directory_uri().'/assets/js/video-slider.js', array( 'jquery' ), VIKING_VERSION, true );
   wp_enqueue_script( 'masonary-js', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js', array(), null, true );
-  wp_enqueue_script( 'grid-js', get_stylesheet_directory_uri().'/assets/js/grid.js', array( 'jquery' ), '1.0.6', true );
-  wp_enqueue_script( 'filters-js', get_stylesheet_directory_uri().'/assets/js/filters.js', array( 'jquery' ), '1.0.4', true );
-  wp_enqueue_script( 'quotes-js', get_stylesheet_directory_uri().'/assets/js/quotes.js', array( 'jquery' ), '1.0.1', true );
+  wp_enqueue_script( 'grid-js', get_stylesheet_directory_uri().'/assets/js/grid.js', array( 'jquery' ), VIKING_VERSION, true );
+  wp_enqueue_script( 'filters-js', get_stylesheet_directory_uri().'/assets/js/filters.js', array( 'jquery' ), VIKING_VERSION, true );
+  wp_enqueue_script( 'quotes-js', get_stylesheet_directory_uri().'/assets/js/quotes.js', array( 'jquery' ), VIKING_VERSION, true );
 
 },99);
 
