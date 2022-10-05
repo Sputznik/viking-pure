@@ -15,12 +15,12 @@
       'id'    => 'checkbox-articles',
       'tax'   => 'articles',
       'label' => 'Articles'
-    ),
-    'press' => array(
-      'id'    => 'checkbox-press',
-      'tax'   => 'press',
-      'label' => 'Press Releases'
-    ),
+    )
+    // 'press' => array(
+    //   'id'    => 'checkbox-press',
+    //   'tax'   => 'press',
+    //   'label' => 'Press Releases'
+    // ),
   );
 
 ?>
