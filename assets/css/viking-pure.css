@@ -791,15 +791,18 @@
 
 /* ARCHIVE RESOURCES */
 .archive .archive-articles-wrapper{ background-color: #f3f4f5; }
-.archive .archive-articles-wrapper .title{ padding-top: 50px; }
-.archive .archive-articles-wrapper .title h2 {
+.archive .archive-articles-wrapper .title,
+.archive-wrapper h2.title{ padding-top: 50px; }
+.archive .archive-articles-wrapper .title h2,
+.archive-wrapper h2.title {
   margin: 0;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
   line-height: 1.4;
 }
-.archive-articles-wrapper .archive-content { padding: 50px 15px; }
+.archive-articles-wrapper .archive-content,
+.archive-wrapper .archive-content { padding: 50px 15px; }
 
 /* PAGINATION */
 .search-pagination .page-numbers.current,
