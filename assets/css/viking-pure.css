@@ -429,6 +429,8 @@
   visibility:visible;
 	opacity:1;
 }
+
+.fullwidth .customer-logos,
 .fullwidth .container-videos{
   width: 100%;
   max-width: 1170px;
@@ -821,6 +823,7 @@ ul.page-numbers li span.current{
 
 /* VIDEO SLIDER SOW */
 @media(max-width:1300px){
+  .fullwidth .customer-logos,
   .fullwidth .container-videos{ width: 85%;}
   .slick-prev, .slick-next{ display: inline-block !important;}
   .slick-prev{left: -55px;}
@@ -1115,6 +1118,7 @@ ul.page-numbers li span.current{
   /* SOW VIKING SIDEBAR */
 
   /* Slick Arrows */
+  .fullwidth .customer-logos,
   .fullwidth .container-videos{ width: 80%;}
   .slick-prev.slick-arrow,
   .slick-next.slick-arrow{
@@ -1317,6 +1321,7 @@ ul.page-numbers li span.current{
     transform: scale(0.5);
 
   }
+  .fullwidth .customer-logos,
   .fullwidth .container-videos{width: 100%;}
   /* Slick Arrows */
   .slick-prev.slick-arrow,
@@ -1433,4 +1438,17 @@ ul.page-numbers li span.current{
   .footer-section-two .logos-section-two {
     text-align: center;
   }
+}
+
+/* QUOTES SLICK */
+[data-behaviour~=quotes-slick] .slick-prev:before{
+  content: url('../logos/left-arrow.svg');
+}
+
+[data-behaviour~=quotes-slick] .slick-next:before{
+  content: url('../logos/right-arrow.svg');
+}
+
+.customer-logos img.remove-grayscale {
+  filter: none !important;
 }
