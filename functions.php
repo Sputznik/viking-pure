@@ -2,7 +2,7 @@
 
 /*  CONSTANTS */
 if( !defined( 'VIKING_VERSION' ) ) {
-  define( 'VIKING_VERSION', '2.0.2' );
+  define( 'VIKING_VERSION', '2.0.3' );
 }
 
 /*ENQUEUE STYLES*/
