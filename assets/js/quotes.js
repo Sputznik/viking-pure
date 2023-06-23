@@ -45,7 +45,7 @@ jQuery(document).ready(function () {
 			slidesToShow	: $el.data('items'),
 			slidesToScroll	: 1,
 			autoplay				: true,
-			autoplaySpeed		: 1500,
+			autoplaySpeed		: $el.data('autoplay-speed'),
 			dots						: false,
 			arrows					: true,
 			pauseOnHover		: false,

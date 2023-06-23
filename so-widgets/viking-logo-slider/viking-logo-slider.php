@@ -37,6 +37,12 @@ class Viking_Logo_Slider extends SiteOrigin_Widget {
 					'label' 		=> __( 'Show number of slides', 'siteorigin-widgets' ),
 					'default' 		=> 6,
 				),
+				'autoplay_speed' => array(
+          'type' => 'number',
+          'label' => __( 'Autoplay Speed', 'siteorigin-widgets' ),
+          'default' => 1500,
+          'description' =>  __( 'Example: 2seconds = 2000 milliseconds','siteorigin-widgets' )
+        ),
 				'slides' => array(
 					'type' 	=> 'repeater',
 					'label' => __( 'Logo Section' , 'siteorigin-widgets' ),
