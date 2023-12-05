@@ -55,11 +55,6 @@
 		    	<img src="<?php _e( "$img_path/omri-listed-white.png" );?>" alt="Omri Listed" />
 				</a>
 			</div>
-			<div class="logos-section-two">
-				<a href="https://service.ariba.com/Discovery.aw/ad/profile?key=AN11114974506" target="_blank">
-		    	<img src="<?php _e( "$img_path/ariba-network.jpeg" );?>" alt="Ariba Network" />
-				</a>
-			</div>
 	  </div>
 	</div>
 </div>
